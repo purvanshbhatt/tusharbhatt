@@ -5,22 +5,18 @@ import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 const testimonials = [
     {
-        name: 'Rohit Sharma',
         location: 'Mumbai, India',
         text: 'Tushar handled my civil dispute with utmost professionalism. Highly recommended!'
     },
     {
-        name: 'Anita Patel',
         location: 'Ahmedabad, India',
         text: 'The family law consultation was compassionate and effective. Thank you!'
     },
     {
-        name: 'Vikram Singh',
         location: 'Delhi, India',
         text: 'Corporate legal advice saved my startup from costly mistakes.'
     },
     {
-        name: 'Sneha Rao',
         location: 'Bengaluru, India',
         text: 'Quick and clear guidance on property dispute. Very satisfied.'
     }
