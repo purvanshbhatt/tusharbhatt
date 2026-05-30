@@ -27,7 +27,7 @@ const FAQ = () => {
     const toggle = index => setOpenIndex(openIndex === index ? null : index);
 
     return (
-        <section id="faq" style={{ padding: 'var(--spacing-xl) 0', backgroundColor: 'var(--color-bg-off-white)' }}>
+        <section id="faq" style={{ padding: 'var(--spacing-xl) 0', backgroundColor: 'var(--bg-section-secondary)' }}>
             <div className="container">
                 <motion.h3
                     initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ const FAQ = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
-                    style={{ color: 'var(--color-primary)', fontSize: '2.5rem' }}
+                    style={{ color: 'var(--text-heading)', fontSize: '2.5rem' }}
                 >
                     FAQs
                 </motion.h2>
@@ -55,17 +55,17 @@ const FAQ = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1 }}
-                            style={{ marginBottom: '1rem', backgroundColor: 'var(--color-bg-light)', padding: '1rem', borderRadius: '6px' }}
+                            style={{ marginBottom: '1rem', backgroundColor: 'var(--bg-card)', padding: '1rem', borderRadius: '6px' }}
                         >
                             <div
                                 onClick={() => toggle(i)}
                                 style={{ display: 'flex', justifyContent: 'space-between', cursor: 'pointer' }}
                             >
-                                <h4 style={{ margin: 0, color: 'var(--color-primary)' }}>{item.question}</h4>
-                                {openIndex === i ? <FaChevronUp /> : <FaChevronDown />}
+                                <h4 style={{ margin: 0, color: 'var(--text-heading)' }}>{item.question}</h4>
+                                {openIndex === i ? <FaChevronUp style={{ color: 'var(--text-heading)' }} /> : <FaChevronDown style={{ color: 'var(--text-heading)' }} />}
                             </div>
                             {openIndex === i && (
-                                <p style={{ marginTop: '0.5rem', color: 'var(--color-text-dark)' }}>{item.answer}</p>
+                                <p style={{ marginTop: '0.5rem', color: 'var(--text-body)' }}>{item.answer}</p>
                             )}
                         </motion.div>
                     ))}

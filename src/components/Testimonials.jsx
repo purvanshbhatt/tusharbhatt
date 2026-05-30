@@ -27,7 +27,7 @@ const testimonials = [
 ];
 
 const Testimonials = () => (
-    <section id="testimonials" style={{ padding: 'var(--spacing-xl) 0', backgroundColor: 'var(--color-bg-off-white)' }}>
+    <section id="testimonials" style={{ padding: 'var(--spacing-xl) 0', backgroundColor: 'var(--bg-section-secondary)' }}>
         <div className="container">
             <motion.h3
                 initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ const Testimonials = () => (
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
-                style={{ color: 'var(--color-primary)', fontSize: '2.5rem' }}
+                style={{ color: 'var(--text-heading)', fontSize: '2.5rem' }}
             >
                 What Our Clients Say
             </motion.h2>
@@ -55,12 +55,12 @@ const Testimonials = () => (
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: i * 0.1, duration: 0.5 }}
-                        style={{ backgroundColor: 'var(--color-bg-light)', padding: '2rem', borderRadius: '8px', position: 'relative' }}
+                        style={{ backgroundColor: 'var(--bg-card)', padding: '2rem', borderRadius: '8px', position: 'relative' }}
                     >
                         <FaQuoteLeft style={{ position: 'absolute', top: '-10px', left: '-10px', color: 'var(--color-accent)', fontSize: '1.5rem' }} />
-                        <p style={{ color: 'var(--color-text-dark)', fontStyle: 'italic', marginBottom: '1rem' }}>{t.text}</p>
-                        <p style={{ color: 'var(--color-primary)', fontWeight: 600 }}>{t.name}</p>
-                        <p style={{ color: 'var(--color-text-dark)', fontSize: '0.9rem' }}>{t.location}</p>
+                        <p style={{ color: 'var(--text-body)', fontStyle: 'italic', marginBottom: '1rem' }}>{t.text}</p>
+                        
+                        <p style={{ color: 'var(--text-body)', fontSize: '0.9rem' }}>{t.location}</p>
                         <FaQuoteRight style={{ position: 'absolute', bottom: '-10px', right: '-10px', color: 'var(--color-accent)', fontSize: '1.5rem' }} />
                     </motion.div>
                 ))}
