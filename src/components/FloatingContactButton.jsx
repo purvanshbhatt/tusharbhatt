@@ -34,7 +34,7 @@ const FloatingContactButton = () => (
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
     >
-        <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" style={iconStyle} onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'} onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}>
+        <a href="https://wa.me/91" target="_blank" rel="noopener noreferrer" style={iconStyle} onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'} onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}>
             <FaWhatsapp size={24} />
         </a>
         <a href="tel:+91-99999-99999" style={iconStyle} onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'} onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}>
