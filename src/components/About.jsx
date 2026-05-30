@@ -28,7 +28,7 @@ const About = () => {
                             <p style={{ fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--text-body)' }}>Years Experience</p>
                         </div>
                         <div>
-                            <h4 style={{ fontSize: '2rem', color: 'var(--color-accent)', marginBottom: '0.5rem' }}>500+</h4>
+                            <h4 style={{ fontSize: '2rem', color: 'var(--color-accent)', marginBottom: '0.5rem' }}>1500+</h4>
                             <p style={{ fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--text-body)' }}>Cases Solved</p>
                         </div>
                     </div>
