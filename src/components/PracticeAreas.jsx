@@ -9,6 +9,7 @@ const practices = [
     { icon: <FaLandmark />, title: 'Property Disputes', desc: 'Resolving complex real estate and land ownership conflicts effectively.' },
     { icon: <FaBalanceScale />, title: 'Criminal Defense', desc: 'Strong defense strategies for individuals facing criminal charges.' },
     { icon: <FaHandshake />, title: 'Legal Consultation', desc: 'Professional advisory services for preventative legal care.' },
+    { icon: <FaLandmark />, title: 'Revenue Cases', desc: 'Expertise in matters related to land revenue, agricultural land disputes, and related administrative proceedings.' },
 ];
 
 const PracticeAreas = () => {
