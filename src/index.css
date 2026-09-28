@@ -98,10 +98,10 @@
 
   /* Spacing */
   --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 2rem;
-  --spacing-lg: 4rem;
-  --spacing-xl: 6rem;
+  --spacing-sm: 0.85rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 3.75rem;
 
   --transition-standard: all 0.25s cubic-bezier(0.2, 0, 0, 1);
   --transition-smooth: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -207,12 +207,23 @@ button {
 .container {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 480px) {
+  .container {
+    padding: 0 1.25rem;
+  }
 }
 
 @media (min-width: 768px) {
   .container {
     padding: 0 2rem;
+  }
+  :root {
+    --spacing-md: 2rem;
+    --spacing-lg: 3.5rem;
+    --spacing-xl: 5.5rem;
   }
 }
 
@@ -299,9 +310,15 @@ button {
 /* Cards */
 .m3-card {
   border-radius: var(--md-sys-shape-corner-lg);
-  padding: 2rem;
+  padding: 1.25rem;
   transition: var(--transition-smooth);
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .m3-card {
+    padding: 2rem;
+  }
 }
 
 .m3-card-elevated {

@@ -1,6 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MdMenu, MdClose, MdLightMode, MdDarkMode, MdGavel, MdPhone, MdTranslate } from 'react-icons/md';
+import { 
+    MdMenu, 
+    MdClose, 
+    MdLightMode, 
+    MdDarkMode, 
+    MdGavel, 
+    MdExpandMore,
+    MdFormatQuote,
+    MdHelpOutline,
+    MdBalance,
+    MdPeople,
+    MdWork,
+    MdLocationOn,
+    MdInfoOutline
+} from 'react-icons/md';
 import { useLanguage } from '../context/LanguageContext';
 import logoIcon from '../assets/logo-icon.png';
 
@@ -8,14 +22,27 @@ const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [isDark, setIsDark] = useState(false);
+    const [moreOpen, setMoreOpen] = useState(false);
     const { language, setLanguage, t } = useLanguage();
+    const moreRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 40);
+            setScrolled(window.scrollY > 30);
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    // Close "More" dropdown when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (e) => {
+            if (moreRef.current && !moreRef.current.contains(e.target)) {
+                setMoreOpen(false);
+            }
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
 
     const toggleTheme = () => {
@@ -28,16 +55,32 @@ const Navbar = () => {
         }
     };
 
-    const navLinks = [
-        { name: t.nav.home, href: '#hero' },
+    // Primary top-level desktop links (clean and uncluttered)
+    const primaryNavLinks = [
         { name: t.nav.about, href: '#about' },
         { name: t.nav.practice, href: '#practice-areas' },
         { name: t.nav.cases, href: '#cases' },
         { name: t.nav.team, href: '#team' },
         { name: t.nav.careers, href: '#careers' },
-        { name: t.nav.testimonials, href: '#testimonials' },
-        { name: t.nav.faq, href: '#faq' },
         { name: t.nav.contact, href: '#contact-info' },
+    ];
+
+    // Secondary items inside the "More" dropdown
+    const secondaryNavLinks = [
+        { name: t.nav.testimonials, href: '#testimonials', icon: <MdFormatQuote /> },
+        { name: t.nav.faq, href: '#faq', icon: <MdHelpOutline /> },
+    ];
+
+    // Complete list for mobile drawer with icons and sections
+    const mobileNavLinks = [
+        { name: t.nav.about, href: '#about', icon: <MdInfoOutline /> },
+        { name: t.nav.practice, href: '#practice-areas', icon: <MdBalance /> },
+        { name: t.nav.cases, href: '#cases', icon: <MdGavel /> },
+        { name: t.nav.team, href: '#team', icon: <MdPeople /> },
+        { name: t.nav.careersFull, href: '#careers', icon: <MdWork /> },
+        { name: t.nav.testimonials, href: '#testimonials', icon: <MdFormatQuote /> },
+        { name: t.nav.faq, href: '#faq', icon: <MdHelpOutline /> },
+        { name: t.nav.contact, href: '#contact-info', icon: <MdLocationOn /> },
     ];
 
     return (
@@ -49,35 +92,44 @@ const Navbar = () => {
                 width: '100%',
                 zIndex: 1000,
                 backgroundColor: scrolled 
-                    ? (isDark ? 'rgba(12, 18, 28, 0.96)' : 'rgba(10, 28, 61, 0.96)') 
-                    : 'transparent',
-                backdropFilter: scrolled ? 'blur(12px)' : 'none',
-                padding: scrolled ? '0.65rem 0' : '1.15rem 0',
+                    ? (isDark ? 'rgba(10, 16, 26, 0.97)' : 'rgba(8, 22, 48, 0.97)') 
+                    : (isDark ? 'rgba(10, 16, 26, 0.75)' : 'rgba(8, 22, 48, 0.75)'),
+                backdropFilter: 'blur(16px)',
+                padding: scrolled ? '0.55rem 0' : '0.85rem 0',
                 transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                borderBottom: scrolled ? '1px solid rgba(212, 175, 55, 0.25)' : '1px solid transparent',
-                boxShadow: scrolled ? '0 4px 20px rgba(0, 0, 0, 0.25)' : 'none'
+                borderBottom: scrolled ? '1px solid rgba(212, 175, 55, 0.25)' : '1px solid rgba(255, 255, 255, 0.08)',
+                boxShadow: scrolled ? '0 4px 24px rgba(0, 0, 0, 0.35)' : 'none'
             }}
             aria-label="Main Navigation"
         >
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 {/* Brand / Logo */}
-                <a href="#hero" style={{ display: 'flex', alignItems: 'center', gap: '14px', textDecoration: 'none' }}>
+                <a 
+                    href="#hero" 
+                    style={{ 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        gap: '12px', 
+                        textDecoration: 'none',
+                        flexShrink: 0
+                    }}
+                >
                     <div style={{
                         background: '#ffffff',
-                        padding: '5px',
+                        padding: '4px',
                         borderRadius: '50%',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         border: '1.5px solid var(--md-sys-color-tertiary)',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.2)'
                     }}>
                         <img
                             src={logoIcon}
                             alt="Advocate Tushar Bhatt Emblem"
                             style={{
-                                height: '36px',
-                                width: '36px',
+                                height: '34px',
+                                width: '34px',
                                 objectFit: 'contain'
                             }}
                         />
@@ -87,7 +139,7 @@ const Navbar = () => {
                             color: '#ffffff',
                             fontSize: '1.15rem',
                             fontWeight: 700,
-                            letterSpacing: '0.8px',
+                            letterSpacing: '0.6px',
                             fontFamily: 'var(--font-heading)',
                             lineHeight: 1.15
                         }}>
@@ -97,45 +149,136 @@ const Navbar = () => {
                             color: 'var(--md-sys-color-tertiary)',
                             fontSize: '0.72rem',
                             fontWeight: 700,
-                            letterSpacing: '0.8px',
+                            letterSpacing: '1.2px',
                             textTransform: 'uppercase'
                         }}>
-                            {language === 'hi' ? 'अधिवक्ता • 25 वर्षों का अनुभव' : 'Advocate • 25 Years Experience'}
+                            {language === 'hi' ? 'अधिवक्ता' : 'ADVOCATE'}
                         </div>
                     </div>
                 </a>
 
-                {/* Desktop Menu */}
-                <div className="desktop-menu" style={{ display: 'flex', alignItems: 'center', gap: '0.9rem' }}>
-                    <div style={{ display: 'flex', gap: '0.15rem' }}>
-                        {navLinks.map((link, i) => (
+                {/* Desktop Menu (Uncluttered, with More dropdown) */}
+                <div className="desktop-menu" style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                        {primaryNavLinks.map((link, i) => (
                             <a
                                 key={i}
                                 href={link.href}
                                 className="nav-item-link"
                                 style={{
-                                    color: '#f0f4fc',
-                                    fontSize: '0.82rem',
-                                    fontWeight: 600,
-                                    padding: '0.4rem 0.55rem',
+                                    color: '#e8edf8',
+                                    fontSize: '0.86rem',
+                                    fontWeight: 500,
+                                    padding: '0.45rem 0.75rem',
                                     borderRadius: 'var(--md-sys-shape-corner-full)',
                                     transition: 'all 0.2s ease',
+                                    textDecoration: 'none',
                                     whiteSpace: 'nowrap'
                                 }}
                             >
                                 {link.name}
                             </a>
                         ))}
+
+                        {/* More Dropdown (for Testimonials & FAQ) */}
+                        <div ref={moreRef} style={{ position: 'relative' }}>
+                            <button
+                                onClick={() => setMoreOpen(!moreOpen)}
+                                onMouseEnter={() => setMoreOpen(true)}
+                                style={{
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '0.25rem',
+                                    background: moreOpen ? 'rgba(255, 255, 255, 0.12)' : 'transparent',
+                                    color: moreOpen ? 'var(--md-sys-color-tertiary)' : '#e8edf8',
+                                    fontSize: '0.86rem',
+                                    fontWeight: 500,
+                                    padding: '0.45rem 0.75rem',
+                                    borderRadius: 'var(--md-sys-shape-corner-full)',
+                                    border: 'none',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.2s ease'
+                                }}
+                                aria-expanded={moreOpen}
+                            >
+                                <span>{t.nav.more}</span>
+                                <MdExpandMore style={{ 
+                                    transform: moreOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+                                    transition: 'transform 0.2s ease',
+                                    fontSize: '1.1rem' 
+                                }} />
+                            </button>
+
+                            <AnimatePresence>
+                                {moreOpen && (
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 8, scale: 0.95 }}
+                                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                                        exit={{ opacity: 0, y: 8, scale: 0.95 }}
+                                        transition={{ duration: 0.18 }}
+                                        onMouseLeave={() => setMoreOpen(false)}
+                                        style={{
+                                            position: 'absolute',
+                                            top: 'calc(100% + 6px)',
+                                            right: 0,
+                                            minWidth: '200px',
+                                            backgroundColor: isDark ? '#111722' : '#0d1f3f',
+                                            borderRadius: 'var(--md-sys-shape-corner-md)',
+                                            border: '1.5px solid rgba(212, 175, 55, 0.35)',
+                                            boxShadow: '0 8px 30px rgba(0,0,0,0.4)',
+                                            padding: '0.4rem',
+                                            display: 'flex',
+                                            flexDirection: 'column',
+                                            gap: '0.2rem',
+                                            zIndex: 1100
+                                        }}
+                                    >
+                                        {secondaryNavLinks.map((item, idx) => (
+                                            <a
+                                                key={idx}
+                                                href={item.href}
+                                                onClick={() => setMoreOpen(false)}
+                                                style={{
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    gap: '0.65rem',
+                                                    padding: '0.6rem 0.85rem',
+                                                    borderRadius: 'var(--md-sys-shape-corner-sm)',
+                                                    color: '#f0f4fc',
+                                                    fontSize: '0.86rem',
+                                                    fontWeight: 500,
+                                                    textDecoration: 'none',
+                                                    transition: 'all 0.15s ease'
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.backgroundColor = 'rgba(212, 175, 55, 0.15)';
+                                                    e.currentTarget.style.color = 'var(--md-sys-color-tertiary)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.backgroundColor = 'transparent';
+                                                    e.currentTarget.style.color = '#f0f4fc';
+                                                }}
+                                            >
+                                                <span style={{ color: 'var(--md-sys-color-tertiary)', fontSize: '1.1rem' }}>
+                                                    {item.icon}
+                                                </span>
+                                                <span>{item.name}</span>
+                                            </a>
+                                        ))}
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </div>
                     </div>
 
                     {/* M3 Language Switcher Pill */}
                     <div style={{
                         display: 'inline-flex',
                         alignItems: 'center',
-                        background: 'rgba(255, 255, 255, 0.1)',
-                        border: '1px solid rgba(255, 255, 255, 0.2)',
+                        background: 'rgba(255, 255, 255, 0.08)',
+                        border: '1px solid rgba(255, 255, 255, 0.18)',
                         borderRadius: 'var(--md-sys-shape-corner-full)',
-                        padding: '3px',
+                        padding: '2px',
                         gap: '2px'
                     }}>
                         <button
@@ -147,6 +290,8 @@ const Navbar = () => {
                                 fontWeight: 700,
                                 background: language === 'en' ? 'var(--md-sys-color-tertiary)' : 'transparent',
                                 color: language === 'en' ? '#000000' : '#ffffff',
+                                border: 'none',
+                                cursor: 'pointer',
                                 transition: 'all 0.2s ease'
                             }}
                             title="Switch to English"
@@ -162,6 +307,8 @@ const Navbar = () => {
                                 fontWeight: 700,
                                 background: language === 'hi' ? 'var(--md-sys-color-tertiary)' : 'transparent',
                                 color: language === 'hi' ? '#000000' : '#ffffff',
+                                border: 'none',
+                                cursor: 'pointer',
                                 transition: 'all 0.2s ease'
                             }}
                             title="हिन्दी में देखें"
@@ -174,16 +321,17 @@ const Navbar = () => {
                     <button
                         onClick={toggleTheme}
                         style={{
-                            background: 'rgba(255, 255, 255, 0.1)',
-                            border: '1px solid rgba(255, 255, 255, 0.2)',
-                            color: 'var(--md-sys-color-tertiary)',
-                            width: '38px',
-                            height: '38px',
+                            background: 'rgba(255, 255, 255, 0.08)',
+                            border: '1px solid rgba(255, 255, 255, 0.18)',
+                            color: isDark ? 'var(--md-sys-color-tertiary)' : '#ffffff',
+                            cursor: 'pointer',
+                            width: '36px',
+                            height: '36px',
                             borderRadius: '50%',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            fontSize: '1.15rem',
+                            fontSize: '1.1rem',
                             transition: 'all 0.25s ease'
                         }}
                         aria-label={isDark ? "Switch to Light Theme" : "Switch to Dark Theme"}
@@ -192,35 +340,15 @@ const Navbar = () => {
                         {isDark ? <MdLightMode /> : <MdDarkMode />}
                     </button>
 
-                    {/* Quick Call Pill */}
+                    {/* Consultation CTA Button (Single, Clean CTA - No duplicate phone pill!) */}
                     <a
-                        href="tel:+919425486154"
-                        style={{
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: '0.4rem',
-                            color: '#ffffff',
-                            fontSize: '0.84rem',
-                            fontWeight: 600,
-                            padding: '0.45rem 0.85rem',
-                            borderRadius: 'var(--md-sys-shape-corner-full)',
-                            background: 'rgba(255, 255, 255, 0.08)',
-                            border: '1px solid rgba(255, 255, 255, 0.15)',
-                            textDecoration: 'none'
-                        }}
-                    >
-                        <MdPhone style={{ color: 'var(--md-sys-color-tertiary)' }} />
-                        <span>+91 94254 86154</span>
-                    </a>
-
-                    {/* Consultation CTA Button */}
-                    <a
-                        href="#contact"
+                        href="#contact-form"
                         className="m3-btn m3-btn-filled"
                         style={{
-                            padding: '0.55rem 1.25rem',
-                            fontSize: '0.86rem',
-                            minHeight: '38px'
+                            padding: '0.5rem 1.15rem',
+                            fontSize: '0.85rem',
+                            minHeight: '36px',
+                            borderRadius: 'var(--md-sys-shape-corner-full)'
                         }}
                     >
                         <MdGavel />
@@ -228,31 +356,35 @@ const Navbar = () => {
                     </a>
                 </div>
 
-                {/* Mobile Controls */}
+                {/* Mobile Controls (Top Bar) */}
                 <div style={{ display: 'none', alignItems: 'center', gap: '0.6rem' }} className="mobile-toggle-group">
                     {/* Mobile Language Button */}
                     <button
                         onClick={() => setLanguage(language === 'hi' ? 'en' : 'hi')}
                         style={{
-                            background: 'rgba(255, 255, 255, 0.15)',
+                            background: 'rgba(255, 255, 255, 0.1)',
                             border: '1px solid var(--md-sys-color-tertiary)',
                             color: 'var(--md-sys-color-tertiary)',
                             padding: '0.35rem 0.65rem',
                             borderRadius: 'var(--md-sys-shape-corner-full)',
-                            fontSize: '0.8rem',
-                            fontWeight: 700
+                            fontSize: '0.78rem',
+                            fontWeight: 700,
+                            cursor: 'pointer'
                         }}
                     >
                         {language === 'hi' ? 'EN' : 'हिन्दी'}
                     </button>
 
-                    <div 
-                        className="mobile-toggle" 
+                    {/* Mobile Hamburger Toggle */}
+                    <button 
+                        className="mobile-toggle-btn"
                         style={{ 
+                            background: 'transparent',
+                            border: 'none',
                             color: '#ffffff', 
                             fontSize: '1.75rem', 
                             cursor: 'pointer',
-                            padding: '0.4rem',
+                            padding: '0.3rem',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center'
@@ -261,121 +393,98 @@ const Navbar = () => {
                         aria-label="Toggle Navigation Menu"
                     >
                         {isOpen ? <MdClose /> : <MdMenu />}
-                    </div>
+                    </button>
                 </div>
             </div>
 
-            {/* Mobile Sheet / Drawer */}
+            {/* Mobile Sheet / Drawer (Clean, Uncluttered, Spaced) */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
-                        transition={{ duration: 0.25 }}
+                        transition={{ duration: 0.22 }}
                         style={{
                             position: 'absolute',
                             top: '100%',
                             left: 0,
                             width: '100%',
-                            backgroundColor: isDark ? '#0c121c' : '#0a1c3d',
-                            padding: '1.75rem 1.5rem',
+                            backgroundColor: isDark ? '#0c1322' : '#081734',
+                            padding: '1.25rem 1.25rem 1.5rem',
                             display: 'flex',
                             flexDirection: 'column',
-                            gap: '1rem',
-                            boxShadow: '0 12px 30px rgba(0,0,0,0.4)',
-                            borderBottom: '2px solid var(--md-sys-color-tertiary)'
+                            gap: '0.8rem',
+                            boxShadow: '0 16px 36px rgba(0,0,0,0.5)',
+                            borderBottom: '2px solid var(--md-sys-color-tertiary)',
+                            maxHeight: 'calc(100vh - 70px)',
+                            overflowY: 'auto'
                         }}
                     >
-                        <div style={{ 
-                            fontSize: '0.78rem', 
-                            color: 'var(--md-sys-color-tertiary)', 
-                            fontWeight: 700, 
-                            letterSpacing: '1px', 
-                            textTransform: 'uppercase',
-                            textAlign: 'center'
+                        {/* Drawer Header Brand */}
+                        <div style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '0.65rem',
+                            paddingBottom: '0.75rem',
+                            borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                            marginBottom: '0.25rem'
                         }}>
-                            {language === 'hi' 
-                                ? 'एडवोकेट तुषार वाई. भट्ट • 25 वर्षों का अनुभव'
-                                : 'Advocate Tushar Y. Bhatt • 25 Years Experience'}
+                            <img
+                                src={logoIcon}
+                                alt="Advocate Emblem"
+                                style={{
+                                    height: '28px',
+                                    width: '28px',
+                                    background: '#ffffff',
+                                    borderRadius: '50%',
+                                    padding: '3px'
+                                }}
+                            />
+                            <div>
+                                <div style={{ color: '#ffffff', fontSize: '0.95rem', fontWeight: 700, fontFamily: 'var(--font-heading)' }}>
+                                    {language === 'hi' ? 'एडवोकेट तुषार वाई. भट्ट' : 'Advocate Tushar Y. Bhatt'}
+                                </div>
+                                <div style={{ color: 'var(--md-sys-color-tertiary)', fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.8px' }}>
+                                    {language === 'hi' ? 'उच्च न्यायालय एवं जिला न्यायालय' : 'High Court & District Judiciary'}
+                                </div>
+                            </div>
                         </div>
 
-                        {/* Mobile Language Switcher */}
-                        <div style={{ 
-                            display: 'flex', 
-                            justifyContent: 'center', 
-                            gap: '0.5rem', 
-                            padding: '0.35rem', 
-                            background: 'rgba(255, 255, 255, 0.08)',
-                            borderRadius: 'var(--md-sys-shape-corner-full)'
-                        }}>
-                            <button
-                                onClick={() => setLanguage('en')}
-                                style={{
-                                    flex: 1,
-                                    padding: '0.5rem',
-                                    borderRadius: 'var(--md-sys-shape-corner-full)',
-                                    fontWeight: 700,
-                                    fontSize: '0.9rem',
-                                    background: language === 'en' ? 'var(--md-sys-color-tertiary)' : 'transparent',
-                                    color: language === 'en' ? '#000000' : '#ffffff'
-                                }}
-                            >
-                                English
-                            </button>
-                            <button
-                                onClick={() => setLanguage('hi')}
-                                style={{
-                                    flex: 1,
-                                    padding: '0.5rem',
-                                    borderRadius: 'var(--md-sys-shape-corner-full)',
-                                    fontWeight: 700,
-                                    fontSize: '0.9rem',
-                                    background: language === 'hi' ? 'var(--md-sys-color-tertiary)' : 'transparent',
-                                    color: language === 'hi' ? '#000000' : '#ffffff'
-                                }}
-                            >
-                                हिन्दी
-                            </button>
+                        {/* Navigation Links Grid (Clean 2-column or list) */}
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '0.5rem' }}>
+                            {mobileNavLinks.map((link, i) => (
+                                <a
+                                    key={i}
+                                    href={link.href}
+                                    onClick={() => setIsOpen(false)}
+                                    style={{ 
+                                        color: '#f0f4fc', 
+                                        fontSize: '0.92rem', 
+                                        fontWeight: 600,
+                                        padding: '0.65rem 0.85rem',
+                                        borderRadius: 'var(--md-sys-shape-corner-sm)',
+                                        background: 'rgba(255, 255, 255, 0.05)',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '0.5rem',
+                                        textDecoration: 'none'
+                                    }}
+                                >
+                                    <span style={{ color: 'var(--md-sys-color-tertiary)', fontSize: '1.1rem', display: 'flex' }}>
+                                        {link.icon}
+                                    </span>
+                                    <span>{link.name}</span>
+                                </a>
+                            ))}
                         </div>
 
-                        {navLinks.map((link, i) => (
-                            <a
-                                key={i}
-                                href={link.href}
-                                onClick={() => setIsOpen(false)}
-                                style={{ 
-                                    color: '#ffffff', 
-                                    fontSize: '1.05rem', 
-                                    fontWeight: 600,
-                                    padding: '0.7rem 1rem',
-                                    borderRadius: 'var(--md-sys-shape-corner-sm)',
-                                    background: 'rgba(255, 255, 255, 0.04)',
-                                    display: 'flex',
-                                    justifyContent: 'space-between',
-                                    alignItems: 'center'
-                                }}
-                            >
-                                <span>{link.name}</span>
-                                <span style={{ color: 'var(--md-sys-color-tertiary)' }}>→</span>
-                            </a>
-                        ))}
-
-                        <div style={{ display: 'flex', gap: '0.75rem', marginTop: '0.5rem' }}>
+                        {/* Consultation Primary CTA */}
+                        <div style={{ marginTop: '0.5rem' }}>
                             <a 
-                                href="tel:+919425486154" 
-                                className="m3-btn m3-btn-outlined-light" 
-                                style={{ flex: 1, padding: '0.7rem' }}
-                                onClick={() => setIsOpen(false)}
-                            >
-                                <MdPhone />
-                                <span>{t.nav.callOffice}</span>
-                            </a>
-
-                            <a 
-                                href="#contact" 
+                                href="#contact-form" 
                                 className="m3-btn m3-btn-filled" 
-                                style={{ flex: 1, padding: '0.7rem' }}
+                                style={{ width: '100%', padding: '0.75rem', fontSize: '0.92rem' }}
                                 onClick={() => setIsOpen(false)}
                             >
                                 <MdGavel />
@@ -383,18 +492,21 @@ const Navbar = () => {
                             </a>
                         </div>
 
-                        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '0.5rem' }}>
+                        {/* Mobile Theme Toggle */}
+                        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '0.25rem' }}>
                             <button
                                 onClick={toggleTheme}
                                 style={{
                                     background: 'transparent',
+                                    border: 'none',
                                     color: 'var(--md-sys-color-tertiary)',
-                                    fontSize: '0.9rem',
+                                    fontSize: '0.84rem',
                                     fontWeight: 600,
                                     display: 'inline-flex',
                                     alignItems: 'center',
-                                    gap: '0.5rem',
-                                    padding: '0.5rem 1rem'
+                                    gap: '0.4rem',
+                                    padding: '0.35rem 0.75rem',
+                                    cursor: 'pointer'
                                 }}
                             >
                                 {isDark ? <MdLightMode /> : <MdDarkMode />}
@@ -406,7 +518,7 @@ const Navbar = () => {
             </AnimatePresence>
 
             <style>{`
-                @media (max-width: 960px) {
+                @media (max-width: 1080px) {
                     .desktop-menu { display: none !important; }
                     .mobile-toggle-group { display: flex !important; }
                 }

@@ -19,8 +19,8 @@ const Hero = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                paddingTop: '6.5rem',
-                paddingBottom: '4rem',
+                paddingTop: '6rem',
+                paddingBottom: '3.5rem',
                 color: '#ffffff'
             }}
         >
@@ -45,7 +45,7 @@ const Hero = () => {
                     left: 0,
                     width: '100%',
                     height: '100%',
-                    background: 'linear-gradient(180deg, rgba(10, 28, 61, 0.90) 0%, rgba(7, 18, 40, 0.94) 60%, rgba(5, 12, 28, 0.98) 100%)',
+                    background: 'linear-gradient(180deg, rgba(8, 22, 48, 0.90) 0%, rgba(6, 16, 36, 0.94) 60%, rgba(4, 10, 24, 0.98) 100%)',
                     zIndex: -1,
                 }}
             />
@@ -57,8 +57,8 @@ const Hero = () => {
                     top: '25%',
                     left: '50%',
                     transform: 'translate(-50%, -50%)',
-                    width: '500px',
-                    height: '500px',
+                    width: '450px',
+                    height: '450px',
                     background: 'radial-gradient(circle, rgba(179, 134, 34, 0.15) 0%, rgba(10, 28, 61, 0) 70%)',
                     zIndex: -1,
                     pointerEvents: 'none'
@@ -72,11 +72,11 @@ const Hero = () => {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.7 }}
-                    style={{ marginBottom: '1.25rem', display: 'inline-block' }}
+                    style={{ marginBottom: '1rem', display: 'inline-block' }}
                 >
                     <div style={{
                         position: 'relative',
-                        padding: '12px',
+                        padding: '10px',
                         background: 'rgba(255, 255, 255, 0.96)',
                         borderRadius: '50%',
                         boxShadow: '0 0 35px rgba(212, 175, 55, 0.35)',
@@ -88,9 +88,10 @@ const Hero = () => {
                         <img
                             src={logoIcon}
                             alt="Scales of Justice - Advocate Tushar Bhatt"
+                            className="hero-logo-crest"
                             style={{
-                                height: '72px',
-                                width: '72px',
+                                height: '60px',
+                                width: '60px',
                                 objectFit: 'contain'
                             }}
                         />
@@ -102,9 +103,9 @@ const Hero = () => {
                     initial={{ opacity: 0, y: -15 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.15 }}
-                    style={{ marginBottom: '1.25rem' }}
+                    style={{ marginBottom: '1rem' }}
                 >
-                    <span className="m3-badge-gold" style={{ fontSize: '0.85rem' }}>
+                    <span className="m3-badge-gold" style={{ fontSize: '0.82rem', padding: '0.4rem 1rem' }}>
                         {t.hero.badge}
                     </span>
                 </motion.div>
@@ -115,11 +116,11 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.3 }}
                     style={{
-                        fontSize: 'clamp(2.3rem, 5vw, 4rem)',
+                        fontSize: 'clamp(2rem, 4.8vw, 3.8rem)',
                         fontWeight: 700,
-                        marginBottom: '1.5rem',
+                        marginBottom: '1.25rem',
                         lineHeight: 1.18,
-                        letterSpacing: '0.8px',
+                        letterSpacing: '0.6px',
                         color: '#ffffff'
                     }}
                 >
@@ -138,11 +139,11 @@ const Hero = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.45 }}
                     style={{
-                        fontSize: 'clamp(1rem, 1.8vw, 1.2rem)',
-                        maxWidth: '740px',
-                        margin: '0 auto 2.5rem',
+                        fontSize: 'clamp(0.96rem, 1.8vw, 1.15rem)',
+                        maxWidth: '720px',
+                        margin: '0 auto 2rem',
                         color: '#d1d8e6',
-                        lineHeight: 1.75
+                        lineHeight: 1.7
                     }}
                 >
                     {t.hero.desc}
@@ -153,20 +154,21 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.6 }}
+                    className="hero-cta-group"
                     style={{
                         display: 'flex',
-                        gap: '1rem',
+                        gap: '0.85rem',
                         justifyContent: 'center',
                         flexWrap: 'wrap',
-                        marginBottom: '3rem'
+                        marginBottom: '2.5rem'
                     }}
                 >
                     <a
-                        href="#contact-info"
+                        href="#contact-form"
                         className="m3-btn m3-btn-filled"
-                        style={{ fontSize: '1rem', padding: '0.85rem 1.8rem' }}
+                        style={{ fontSize: '0.95rem', padding: '0.75rem 1.6rem' }}
                     >
-                        <MdGavel style={{ fontSize: '1.2rem' }} />
+                        <MdGavel style={{ fontSize: '1.15rem' }} />
                         <span>{t.hero.button}</span>
                         <MdArrowForward />
                     </a>
@@ -174,16 +176,16 @@ const Hero = () => {
                     <a
                         href="#cases"
                         className="m3-btn m3-btn-outlined-light"
-                        style={{ fontSize: '1rem', padding: '0.85rem 1.8rem' }}
+                        style={{ fontSize: '0.95rem', padding: '0.75rem 1.6rem' }}
                     >
-                        <MdBalance style={{ fontSize: '1.2rem' }} />
+                        <MdBalance style={{ fontSize: '1.15rem' }} />
                         <span>{t.hero.casesBtn}</span>
                     </a>
 
                     <a
                         href="#practice-areas"
                         className="m3-btn m3-btn-outlined-light"
-                        style={{ fontSize: '1rem', padding: '0.85rem 1.8rem' }}
+                        style={{ fontSize: '0.95rem', padding: '0.75rem 1.6rem' }}
                     >
                         <span>{t.hero.practiceBtn}</span>
                     </a>
@@ -194,13 +196,14 @@ const Hero = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.75 }}
+                    className="hero-trust-bar"
                     style={{
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
                         gap: '0.8rem',
                         flexWrap: 'wrap',
-                        padding: '1.2rem 1.5rem',
+                        padding: '1rem 1.5rem',
                         background: 'rgba(16, 36, 75, 0.65)',
                         backdropFilter: 'blur(10px)',
                         borderRadius: 'var(--md-sys-shape-corner-lg)',
@@ -211,21 +214,46 @@ const Hero = () => {
                 >
                     {t.hero.chips.map((chip, index) => (
                         <React.Fragment key={index}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#e8edf8', fontSize: '0.88rem', fontWeight: 600 }}>
+                            <div className="hero-trust-chip" style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', color: '#e8edf8', fontSize: '0.86rem', fontWeight: 600 }}>
                                 {chip.icon === 'shield' ? (
-                                    <MdShield style={{ color: 'var(--md-sys-color-tertiary)', fontSize: '1.1rem' }} />
+                                    <MdShield style={{ color: 'var(--md-sys-color-tertiary)', fontSize: '1.05rem' }} />
                                 ) : (
                                     <span style={{ color: 'var(--md-sys-color-tertiary)' }}>{chip.icon}</span>
                                 )}
                                 <span>{chip.text}</span>
                             </div>
                             {index < t.hero.chips.length - 1 && (
-                                <span style={{ color: 'rgba(255, 255, 255, 0.3)' }}>•</span>
+                                <span className="hero-trust-divider" style={{ color: 'rgba(255, 255, 255, 0.3)' }}>•</span>
                             )}
                         </React.Fragment>
                     ))}
                 </motion.div>
             </div>
+
+            <style>{`
+                @media (max-width: 640px) {
+                    .hero-trust-bar {
+                        display: grid !important;
+                        grid-template-columns: 1fr 1fr !important;
+                        gap: 0.65rem !important;
+                        padding: 0.85rem !important;
+                        text-align: left !important;
+                    }
+                    .hero-trust-divider {
+                        display: none !important;
+                    }
+                    .hero-trust-chip {
+                        font-size: 0.78rem !important;
+                    }
+                    .hero-logo-crest {
+                        height: 48px !important;
+                        width: 48px !important;
+                    }
+                    .hero-cta-group a {
+                        width: 100% !important;
+                    }
+                }
+            `}</style>
         </section>
     );
 };

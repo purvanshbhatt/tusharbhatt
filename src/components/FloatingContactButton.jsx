@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 
 const FloatingContactButton = () => {
     const { t, language } = useLanguage();
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+    const size = isMobile ? '44px' : '48px';
+    const iconSize = isMobile ? 22 : 24;
 
     const fabItemStyle = {
         background: 'var(--md-sys-color-tertiary)',
         color: 'var(--md-sys-color-on-tertiary)',
         borderRadius: 'var(--md-sys-shape-corner-full)',
-        width: '52px',
-        height: '52px',
+        width: size,
+        height: size,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -30,12 +43,12 @@ const FloatingContactButton = () => {
         <motion.div
             style={{
                 position: 'fixed',
-                bottom: '2rem',
-                right: '2rem',
+                bottom: isMobile ? '1.25rem' : '2rem',
+                right: isMobile ? '1.25rem' : '2rem',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '0.9rem',
-                zIndex: 1000,
+                gap: isMobile ? '0.65rem' : '0.85rem',
+                zIndex: 999,
             }}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -47,24 +60,24 @@ const FloatingContactButton = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ ...fabItemStyle, backgroundColor: '#25D366', color: '#ffffff' }}
-                whileHover={{ scale: 1.1, boxShadow: 'var(--md-sys-elevation-4)' }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.08, boxShadow: 'var(--md-sys-elevation-4)' }}
+                whileTap={{ scale: 0.94 }}
                 aria-label={t.floating.whatsappAria}
                 title={t.floating.whatsappTitle}
             >
-                <FaWhatsapp size={26} />
+                <FaWhatsapp size={iconSize} />
             </motion.a>
 
             {/* Direct Phone Call */}
             <motion.a
                 href="tel:+919425486154"
                 style={fabItemStyle}
-                whileHover={{ scale: 1.1, boxShadow: 'var(--md-sys-elevation-4)' }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.08, boxShadow: 'var(--md-sys-elevation-4)' }}
+                whileTap={{ scale: 0.94 }}
                 aria-label={t.floating.callAria}
                 title={t.floating.callTitle}
             >
-                <FaPhoneAlt size={20} />
+                <FaPhoneAlt size={isMobile ? 18 : 19} />
             </motion.a>
         </motion.div>
     );

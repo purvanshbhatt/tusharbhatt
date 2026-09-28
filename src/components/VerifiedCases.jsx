@@ -430,7 +430,7 @@ const VerifiedCases = () => {
           {filteredCases.length > 0 ? (
             <div style={{ 
               display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))', 
+              gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', 
               gap: '1.5rem',
               marginBottom: '3rem'
             }}>
