@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import PracticeAreas from './components/PracticeAreas';
+import VerifiedCases from './components/VerifiedCases';
 import Contact from './components/Contact';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
@@ -35,6 +36,7 @@ function MainApp() {
                     <Hero />
                     <About />
                     <PracticeAreas />
+                    <VerifiedCases />
                     <Contact />
                     <ContactForm />
                     <Testimonials />

@@ -10,9 +10,10 @@ export const translations = {
       home: "Home",
       about: "About",
       practice: "Practice Areas",
+      cases: "Verified Cases",
       testimonials: "Testimonials",
       faq: "FAQ",
-      contact: "Contact",
+      contact: "Chambers",
       consultation: "Consultation",
       callOffice: "Call Chamber"
     },
@@ -23,10 +24,11 @@ export const translations = {
       desc: "Providing formidable representation in Civil Litigation, Complex Land Revenue, Property Titles, and Family Law across the High Court and District Judiciary.",
       button: "Schedule Consultation",
       practiceBtn: "Practice Areas",
+      casesBtn: "Verified Cases",
       chips: [
         { icon: "🏛️", text: "25+ Years at the Bar" },
         { icon: "📜", text: "High Court & District Courts" },
-        { icon: "⚖️", text: "Civil, Revenue & Family" },
+        { icon: "⚖️", text: "350+ eCourts Documented Matters" },
         { icon: "shield", text: "100% Client Privilege" }
       ]
     },
@@ -34,25 +36,27 @@ export const translations = {
       badge: "Advocate Profile • 25 Years of Practice",
       titleLine1: "Experience. Dedication.",
       titleLine2: "Judicial Acumen.",
-      intro: "With over 25 years of distinguished experience in the Indian legal system, Advocate Tushar Y. Bhatt has earned a steadfast reputation for formidable courtroom advocacy and strategic legal counsel.",
-      body: "Practicing before the High Court and District & Sessions Judiciary, Advocate Bhatt combines deep procedural mastery with an unyielding commitment to justice. Whether resolving high-stakes land revenue conflicts, commercial contract enforcement, or sensitive matrimonial disputes, every case receives meticulous preparation and absolute client confidentiality.",
+      intro: "With over 25 years of distinguished experience in the Indian legal system, Advocate Tushar Y. Bhatt (Tushar Rao Bhatt) has earned a steadfast reputation for formidable courtroom advocacy and strategic legal counsel.",
+      body: "Practicing before the High Court of Madhya Pradesh and the District & Sessions Judiciary across Ujjain, Thandla, Jhabua, and Petlawad, Advocate Bhatt combines deep procedural mastery with an unyielding commitment to justice. Whether resolving high-stakes land revenue conflicts, criminal defense trials, or complex civil title disputes, every case receives meticulous preparation and absolute client confidentiality.",
       stats: {
         yearsVal: "25+",
         yearsLabel: "Years at the Bar",
         yearsSub: "Active Practice",
-        casesVal: "1,500+",
-        casesLabel: "Matters Handled",
-        casesSub: "Civil & Revenue",
+        casesVal: "350+",
+        casesLabel: "eCourts Documented",
+        casesSub: "Verified Cases",
         privilegeVal: "100%",
         privilegeLabel: "Privilege",
         privilegeSub: "Client Discretion"
       },
       chips: [
-        "High Court Practice",
-        "Revenue & Property Law",
+        "High Court Practice (Indore Bench)",
+        "Civil Court Thandla & Jhabua Judiciary",
+        "Revenue & Land Property Law",
         "Trial & Appellate Advocacy"
       ],
       cta: "Consult With Advocate Bhatt",
+      viewCasesCta: "View Verified Cases",
       sealName: "Tushar Y. Bhatt",
       sealSub: "Advocate • 25 Years of Practice"
     },
@@ -104,15 +108,81 @@ export const translations = {
         }
       ]
     },
+    cases: {
+      eyebrow: "Official eCourts India Tracking • Public Judicial Record",
+      title: "Actual Court Work & Case History",
+      subtitle: "Documented courtroom litigation across Civil Court Thandla, District & Sessions Court Jhabua, Civil Court Petlawad, Family Court Jhabua, and Ujjain Chambers, with appellate practice before the High Court of Madhya Pradesh.",
+      statsHeading: "Judicial Track Record Summary",
+      statTotal: "Documented Cases",
+      statCriminal: "Criminal Complaints & Trials",
+      statCivil: "Regular Civil Suits",
+      statSessions: "Sessions Cases",
+      statDisposed: "Disposed Orders & Decrees",
+      statCourts: "Court Jurisdictions",
+      filters: {
+        all: "All Verified Cases",
+        criminal: "Criminal Defense & IPC",
+        civil: "Civil Suits & CPC",
+        family: "Domestic Violence & Family",
+        execution: "Execution & Appeals"
+      },
+      searchPlaceholder: "Search actual cases by party name, CNR number, court, or statutory section (e.g., 353, 372, Laxmibai, Dasharath)...",
+      showingCount: "Showing",
+      ofTotal: "of",
+      verifiedCasesLabel: "verified court cases",
+      noResults: "No cases match your search criteria. Please adjust your keywords.",
+      resetSearch: "Reset Filters",
+      card: {
+        court: "Court",
+        judge: "Presiding Judge",
+        caseType: "Case Type",
+        advocate: "Advocate on Record",
+        actSection: "Statutory Acts & Sections",
+        status: "Status",
+        cnr: "CNR No",
+        verifyBtn: "Verify on eCourts India"
+      },
+      statusDisposed: "Disposed",
+      statusPending: "Pending Trial",
+      profilesHeading: "Official Judicial Profiles & Public Registers",
+      profileTusharRao: "eCourts India: Advocate Tushar Rao Bhatt (352+ Cases)",
+      profileShriTushar: "eCourts India: Shri Tushar Bhatt Advocate (Civil Court Thandla)",
+      profileGoogle: "Google Business Profile & Location (Thandla & Ujjain)",
+      disclaimer: "Bar Council of India Transparency Notice: The court case details and CNR tracking numbers displayed above are sourced directly from the official eCourts India judicial portal (ecourtsindia.com) for client verification and informational transparency."
+    },
     contact: {
-      badge: "Chamber Information • Official Contact",
+      badge: "Chamber Information • Dual Jurisdictional Practice",
       titleLine1: "Chambers of",
       titleLine2: "Advocate Tushar Y. Bhatt",
-      desc: "Consultations are conducted in-person at the Ujjain Chamber or virtually via secure video conference for clients across India and abroad.",
+      desc: "Advocate Tushar Bhatt operates from two established legal chambers in Madhya Pradesh to serve clients across the High Court, District Courts, and Regional Tehsils.",
       phoneLabel: "Chamber & Mobile",
       emailLabel: "Email Inquiries",
-      officeLabel: "Chamber Address",
-      address: "17-B Arihant Vikram Nagar, Sethi Nagar, Ujjain, Madhya Pradesh, India — 456010",
+      officeLabel: "Chambers",
+      chambers: [
+        {
+          id: "ujjain",
+          title: "Head Chamber (Ujjain)",
+          type: "Primary Office & High Court Registry",
+          address: "17-B Arihant Vikram Nagar, Sethi Nagar, Ujjain, Madhya Pradesh, India — 456010",
+          jurisdiction: "High Court of MP (Indore Bench), District & Sessions Court Ujjain, Revenue Tribunals",
+          timings: "Monday – Saturday: 10:00 AM – 8:00 PM (By Appointment)",
+          mapUrl: "https://maps.google.com/maps?q=17-B+Arihant+Vikram+Nagar+Sethi+Nagar+Ujjain+Madhya+Pradesh+456010&t=&z=15&ie=UTF8&iwloc=&output=embed",
+          directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=17-B+Arihant+Vikram+Nagar+Sethi+Nagar+Ujjain+Madhya+Pradesh+456010"
+        },
+        {
+          id: "thandla",
+          title: "Regional Chamber (Thandla / Jhabua)",
+          type: "District & Tehsil Court Chamber (eCourts Hub)",
+          address: "Civil Court Campus, Near Tehsil Office / Station Road, Thandla, District Jhabua, Madhya Pradesh, India — 457777",
+          jurisdiction: "Civil Court Thandla (331+ Cases), District & Sessions Court Jhabua, Civil Court Petlawad",
+          timings: "Monday – Saturday: 10:00 AM – 6:00 PM (Court Working Hours)",
+          mapUrl: "https://maps.google.com/maps?q=Civil+Court+Thandla+Madhya+Pradesh+457777&t=&z=15&ie=UTF8&iwloc=&output=embed",
+          directionsUrl: "https://maps.google.com/?cid=6675117799456301344",
+          googleBusinessUrl: "https://share.google/MRr526qpjPLtuISDq"
+        }
+      ],
+      getDirections: "Get Directions",
+      viewOnGoogle: "Google Business Profile",
       hoursLabel: "Chamber Hours",
       hours: "Monday – Saturday: 10:00 AM – 8:00 PM",
       hoursSub: "(By Prior Appointment for Court Schedules)"
@@ -128,6 +198,12 @@ export const translations = {
       emailPlaceholder: "e.g. ramesh@example.com",
       phoneLabel: "Contact Number *",
       phonePlaceholder: "+91 98765 43210",
+      chamberLabel: "Preferred Chamber for Consultation",
+      chambersList: [
+        "Ujjain Chamber (17-B Arihant Vikram Nagar)",
+        "Thandla Chamber (Civil Court Campus, Jhabua)",
+        "Virtual Consultation (Google Meet / Video Call)"
+      ],
       matterLabel: "Subject of Matter",
       matters: [
         "Civil Litigation & Writs",
@@ -186,7 +262,11 @@ export const translations = {
       items: [
         {
           question: "What is Advocate Tushar Bhatt’s courtroom experience and jurisdiction?",
-          answer: "Advocate Tushar Y. Bhatt has over 25 years of active legal practice. He regularly appears before the High Court of Madhya Pradesh (Indore & Jabalpur Benches), District & Sessions Courts, Family Courts, and State Revenue Tribunals (including Tehsildar, SDO, Collector, and Board of Revenue)."
+          answer: "Advocate Tushar Y. Bhatt (Tushar Rao Bhatt) has over 25 years of active legal practice. He regularly appears before the High Court of Madhya Pradesh (Indore Bench), District & Sessions Courts in Ujjain and Jhabua, Civil Courts in Thandla and Petlawad, and State Revenue Tribunals (including Tehsildar, SDO, Collector, and Board of Revenue)."
+        },
+        {
+          question: "Where are Advocate Tushar Bhatt’s chambers located?",
+          answer: "Advocate Bhatt operates from two chambers: (1) Primary Chamber in Ujjain at 17-B Arihant Vikram Nagar, Sethi Nagar; and (2) Regional Chamber in Thandla (District Jhabua) at the Civil Court Campus, near Tehsil Office. He also provides structured virtual consultations for clients across India and abroad."
         },
         {
           question: "What documentation should I bring to an initial legal consultation?",
@@ -201,12 +281,8 @@ export const translations = {
           answer: "Yes. With extensive expertise in the MP Land Revenue Code (MPLRC), our chambers represent farmers, landholders, and developers in partition suits, demarcation disputes, adverse possession, mutation appeals, and revision petitions across MP."
         },
         {
-          question: "Can consultations be conducted virtually for out-of-station or NRI clients?",
-          answer: "Yes, we regularly provide structured legal consultations via encrypted video conference (Google Meet / Zoom) for clients residing across India or overseas who have property, inheritance, or commercial interests in Madhya Pradesh."
-        },
-        {
-          question: "How are professional fees structured for litigation and advisory?",
-          answer: "Professional fees are structured transparently based on the complexity of the matter, court forum, research required, and whether the engagement is per-appearance, stage-wise (drafting, arguments, decree), or an ongoing retainer. A clear schedule of fees is discussed prior to formal engagement."
+          question: "How can I verify the cases and judicial track record of Advocate Bhatt?",
+          answer: "Advocate Bhatt's cases are publicly trackable on the national eCourts India portal (ecourtsindia.com) under Advocate Tushar Rao Bhatt and Shri Tushar Bhatt Advocate, documenting over 350+ cases across Thandla, Jhabua, Petlawad, and higher courts."
         }
       ]
     },
@@ -229,11 +305,19 @@ export const translations = {
         { name: "Home", href: "#hero" },
         { name: "Advocate Profile", href: "#about" },
         { name: "Practice Areas", href: "#practice-areas" },
+        { name: "Verified Cases", href: "#cases" },
         { name: "Client Feedback", href: "#testimonials" },
         { name: "Consultation FAQ", href: "#faq" },
-        { name: "Chamber Contact", href: "#contact-info" }
+        { name: "Chambers & Contact", href: "#contact-info" }
       ],
-      chamberTitle: "Chamber Office",
+      chamberTitle: "Dual Chambers",
+      ujjainLabel: "Ujjain Head Chamber:",
+      ujjainAddr: "17-B Arihant Vikram Nagar, Sethi Nagar, Ujjain, MP — 456010",
+      thandlaLabel: "Thandla Regional Chamber:",
+      thandlaAddr: "Civil Court Campus, Near Tehsil Office, Thandla, Dist. Jhabua, MP — 457777",
+      verifiedProfilesHeading: "Verified Profiles & Registers:",
+      ecourtsLinkText: "eCourts India (352+ Cases)",
+      googleLinkText: "Google Business Profile",
       disclaimerTitle: "Bar Council of India Disclaimer:",
       disclaimer: "As per the rules of the Bar Council of India, advocates are prohibited from soliciting work or advertising. By visiting this website, the user acknowledges that the information provided is solely for personal knowledge and informational reference, and does not create an advocate-client relationship.",
       rights: `© ${new Date().getFullYear()} Advocate Tushar Y. Bhatt. Over 25 Years of Dedicated Legal Practice. All Rights Reserved.`
@@ -256,9 +340,10 @@ export const translations = {
       home: "होम",
       about: "परिचय",
       practice: "प्रैक्टिस क्षेत्र",
+      cases: "वास्तविक प्रकरण",
       testimonials: "प्रशंसापत्र",
       faq: "प्रश्नोत्तर",
-      contact: "संपर्क",
+      contact: "कार्यालय",
       consultation: "परामर्श लें",
       callOffice: "कॉल करें"
     },
@@ -269,10 +354,11 @@ export const translations = {
       desc: "उच्च न्यायालय एवं जिला न्यायालयों में सिविल वाद, जटिल भूमि राजस्व, संपत्ति स्वामित्व और पारिवारिक मामलों में 25 वर्षों से विश्वसनीय कानूनी प्रतिनिधित्व।",
       button: "परामर्श बुक करें",
       practiceBtn: "प्रैक्टिस क्षेत्र",
+      casesBtn: "सत्यापित प्रकरण",
       chips: [
         { icon: "🏛️", text: "25+ वर्षों की विधिक प्रैक्टिस" },
         { icon: "📜", text: "हाई कोर्ट एवं जिला न्यायालय" },
-        { icon: "⚖️", text: "सिविल, राजस्व एवं पारिवारिक" },
+        { icon: "⚖️", text: "350+ ई-कोर्ट्स में दर्ज प्रकरण" },
         { icon: "shield", text: "100% पूर्ण विधिक गोपनीयता" }
       ]
     },
@@ -280,25 +366,27 @@ export const translations = {
       badge: "अधिवक्ता प्रोफाइल • 25 वर्षों का अनुभव",
       titleLine1: "अनुभव. समर्पण.",
       titleLine2: "विधिक निपुणता।",
-      intro: "भारतीय न्याय व्यवस्था में 25 से अधिक वर्षों के उत्कृष्ट अनुभव के साथ, एडवोकेट तुषार वाई. भट्ट ने दमदार कोर्टरूम पैरवी और रणनीतिक विधिक सलाह के लिए एक प्रतिष्ठित स्थान बनाया है।",
-      body: "मध्य प्रदेश उच्च न्यायालय तथा जिला एवं सत्र न्यायालयों में नियमित रूप से वकालत करते हुए, एडवोकेट भट्ट प्रक्रियात्मक ज्ञान और न्याय के प्रति गहरी निष्ठा के साथ कार्य करते हैं। चाहे वह जटिल भूमि राजस्व का विवाद हो, अनुबंध पालन का मामला हो, या पारिवारिक विवाद—प्रत्येक प्रकरण में गहन तैयारी और पूर्ण मुवक्किल गोपनीयता सुनिश्चित की जाती है।",
+      intro: "भारतीय न्याय व्यवस्था में 25 से अधिक वर्षों के उत्कृष्ट अनुभव के साथ, एडवोकेट तुषार वाई. भट्ट (तुषार राव भट्ट) ने दमदार कोर्टरूम पैरवी और रणनीतिक विधिक सलाह के लिए एक प्रतिष्ठित स्थान बनाया है।",
+      body: "मध्य प्रदेश उच्च न्यायालय तथा उज्जैन, थांदला, झाबुआ एवं पेटलावद के जिला व सत्र न्यायालयों में नियमित रूप से वकालत करते हुए, एडवोकेट भट्ट प्रक्रियात्मक ज्ञान और न्याय के प्रति गहरी निष्ठा के साथ कार्य करते हैं। चाहे वह जटिल भूमि राजस्व का विवाद हो, आपराधिक विचारण हो, या संपत्ति स्वामित्व का वाद—प्रत्येक प्रकरण में गहन तैयारी और पूर्ण मुवक्किल गोपनीयता सुनिश्चित की जाती है।",
       stats: {
         yearsVal: "25+",
         yearsLabel: "वर्षों का अनुभव",
         yearsSub: "सक्रिय प्रैक्टिस",
-        casesVal: "1,500+",
-        casesLabel: "मामले हल किए",
-        casesSub: "सिविल एवं राजस्व",
+        casesVal: "350+",
+        casesLabel: "ई-कोर्ट्स दर्ज",
+        casesSub: "सत्यापित मामले",
         privilegeVal: "100%",
         privilegeLabel: "गोपनीयता",
         privilegeSub: "क्लाइंट विशेषाधिकार"
       },
       chips: [
-        "उच्च न्यायालय प्रैक्टिस",
+        "उच्च न्यायालय प्रैक्टिस (इंदौर खंडपीठ)",
+        "सिविल कोर्ट थांदला एवं झाबुआ न्यायपालिका",
         "राजस्व एवं संपत्ति विधि",
         "ट्रायल एवं अपीलीय वकालत"
       ],
       cta: "एडवोकेट भट्ट से परामर्श लें",
+      viewCasesCta: "सत्यापित प्रकरण देखें",
       sealName: "तुषार वाई. भट्ट",
       sealSub: "एडवोकेट • 25 वर्षों का अनुभव"
     },
@@ -350,15 +438,81 @@ export const translations = {
         }
       ]
     },
+    cases: {
+      eyebrow: "ई-कोर्ट्स भारत आधिकारिक अभिलेख • सार्वजनिक न्यायिक रिकॉर्ड",
+      title: "वास्तविक विधिक कार्य एवं न्यायिक प्रकरण सूची",
+      subtitle: "सिविल कोर्ट थांदला, जिला एवं सत्र न्यायालय झाबुआ, सिविल कोर्ट पेटलावद, कुटुंब न्यायालय एवं उज्जैन चेम्बर में 350+ सत्यापित प्रकरणों में सफल पैरवी, तथा म.प्र. उच्च न्यायालय (इंदौर खंडपीठ) में अपीलीय वकालत।",
+      statsHeading: "सत्यापित न्यायिक आंकड़े",
+      statTotal: "दर्ज न्यायालयीन प्रकरण",
+      statCriminal: "आपराधिक परिवाद एवं विचारण",
+      statCivil: "नियमित सिविल वाद",
+      statSessions: "सत्र न्यायालय प्रकरण",
+      statDisposed: "निस्तारित आदेश एवं डिक्री",
+      statCourts: "न्यायिक क्षेत्राधिकार",
+      filters: {
+        all: "सभी सत्यापित प्रकरण",
+        criminal: "आपराधिक बचाव एवं आईपीसी",
+        civil: "सिविल वाद एवं सीपीसी",
+        family: "घरेलू हिंसा एवं पारिवारिक",
+        execution: "डिक्री निष्पादन एवं अपील"
+      },
+      searchPlaceholder: "पक्षकार के नाम, सीएनआर नंबर, न्यायालय या कानून की धारा (उदा. 353, 372, लक्ष्मीबाई, दशरथ) से खोजें...",
+      showingCount: "दर्शाए जा रहे हैं",
+      ofTotal: "कुल",
+      verifiedCasesLabel: "सत्यापित प्रकरणों में से",
+      noResults: "आपकी खोज के अनुसार कोई प्रकरण नहीं मिला। कृपया अन्य शब्द का प्रयास करें।",
+      resetSearch: "फ़िल्टर रीसेट करें",
+      card: {
+        court: "न्यायालय",
+        judge: "पीठासीन न्यायाधीश",
+        caseType: "प्रकरण प्रकार",
+        advocate: "अधिवक्ता अभिलेख",
+        actSection: "लागू अधिनियम एवं धाराएं",
+        status: "स्थिति",
+        cnr: "सीएनआर नंबर",
+        verifyBtn: "ई-कोर्ट्स पर सत्यापित करें"
+      },
+      statusDisposed: "निस्तारित",
+      statusPending: "प्रक्रियाधीन विचारण",
+      profilesHeading: "आधिकारिक न्यायिक प्रोफाइल एवं सार्वजनिक अभिलेख",
+      profileTusharRao: "ई-कोर्ट्स भारत: एडवोकेट तुषार राव भट्ट (352+ प्रकरण)",
+      profileShriTushar: "ई-कोर्ट्स भारत: श्री तुषार भट्ट एडवोकेट (सिविल कोर्ट थांदला)",
+      profileGoogle: "गूगल बिजनेस प्रोफाइल व नक्शा (थांदला एवं उज्जैन)",
+      disclaimer: "बार काउंसिल ऑफ इंडिया वैधानिक पारदर्शिता सूचना: उपर्युक्त न्यायिक प्रकरण विवरण एवं सीएनआर ट्रैकिंग संदर्भ भारतीय न्यायालयों के आधिकारिक पोर्टल eCourts India (ecourtsindia.com) से मुवक्किल सत्यापन एवं विधिक पारदर्शिता हेतु बार काउंसिल ऑफ इंडिया के नियमों के अनुरूप संकलित हैं।"
+    },
     contact: {
-      badge: "चेम्बर जानकारी • आधिकारिक संपर्क",
+      badge: "चेम्बर जानकारी • दोहरा न्यायिक क्षेत्राधिकार",
       titleLine1: "कार्यालय",
       titleLine2: "एडवोकेट तुषार वाई. भट्ट",
-      desc: "परामर्श व्यक्तिगत रूप से उज्जैन चेम्बर में अथवा भारत एवं विदेश के मुवक्किलों के लिए सुरक्षित वीडियो कॉन्फ्रेंस द्वारा आयोजित किए जाते हैं।",
+      desc: "एडवोकेट तुषार भट्ट मध्य प्रदेश में दो स्थापित विधिक कार्यालयों से कार्य करते हैं, जिससे उच्च न्यायालय, जिला न्यायालयों एवं क्षेत्रीय तहसीलों के मुवक्किलों को त्वरित विधिक सहायता उपलब्ध होती है।",
       phoneLabel: "चेम्बर एवं मोबाइल फोन",
       emailLabel: "ईमेल द्वारा पूछताछ",
-      officeLabel: "चेम्बर का पता",
-      address: "17-B अरिहंत विक्रम नगर, सेठी नगर, उज्जैन, मध्य प्रदेश, भारत — 456010",
+      officeLabel: "चेम्बर कार्यालय",
+      chambers: [
+        {
+          id: "ujjain",
+          title: "प्रधान कार्यालय (उज्जैन)",
+          type: "मुख्य कार्यालय एवं उच्च न्यायालय रजिस्ट्री",
+          address: "17-B अरिहंत विक्रम नगर, सेठी नगर, उज्जैन, मध्य प्रदेश, भारत — 456010",
+          jurisdiction: "मध्य प्रदेश उच्च न्यायालय (इंदौर खंडपीठ), जिला एवं सत्र न्यायालय उज्जैन, राजस्व मंडल",
+          timings: "सोमवार – शनिवार: प्रातः 10:00 से रात्रि 8:00 बजे तक (पूर्व समय निर्धारण अनिवार्य)",
+          mapUrl: "https://maps.google.com/maps?q=17-B+Arihant+Vikram+Nagar+Sethi+Nagar+Ujjain+Madhya+Pradesh+456010&t=&z=15&ie=UTF8&iwloc=&output=embed",
+          directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=17-B+Arihant+Vikram+Nagar+Sethi+Nagar+Ujjain+Madhya+Pradesh+456010"
+        },
+        {
+          id: "thandla",
+          title: "क्षेत्रीय कार्यालय (थांदला / झाबुआ)",
+          type: "जिला एवं तहसील न्यायालय चेम्बर (ई-कोर्ट्स केंद्र)",
+          address: "सिविल कोर्ट परिसर, तहसील कार्यालय के समीप / स्टेशन रोड, थांदला, जिला झाबुआ, मध्य प्रदेश, भारत — 457777",
+          jurisdiction: "सिविल कोर्ट थांदला (331+ प्रकरण), जिला एवं सत्र न्यायालय झाबुआ, सिविल कोर्ट पेटलावद",
+          timings: "सोमवार – शनिवार: प्रातः 10:00 से सायं 6:00 बजे तक (न्यायालयीन समय)",
+          mapUrl: "https://maps.google.com/maps?q=Civil+Court+Thandla+Madhya+Pradesh+457777&t=&z=15&ie=UTF8&iwloc=&output=embed",
+          directionsUrl: "https://maps.google.com/?cid=6675117799456301344",
+          googleBusinessUrl: "https://share.google/MRr526qpjPLtuISDq"
+        }
+      ],
+      getDirections: "मार्ग दर्शन (Directions)",
+      viewOnGoogle: "गूगल बिजनेस प्रोफाइल",
       hoursLabel: "चेम्बर का समय",
       hours: "सोमवार – शनिवार: प्रातः 10:00 से रात्रि 8:00 बजे तक",
       hoursSub: "(न्यायालयीन समय के कारण पूर्व अनुमति अनिवार्य)"
@@ -374,6 +528,12 @@ export const translations = {
       emailPlaceholder: "उदा. ramesh@example.com",
       phoneLabel: "संपर्क मोबाइल नंबर *",
       phonePlaceholder: "+91 98765 43210",
+      chamberLabel: "परामर्श हेतु पसंदीदा कार्यालय",
+      chambersList: [
+        "उज्जैन चेम्बर (17-B अरिहंत विक्रम नगर)",
+        "थांदला चेम्बर (सिविल कोर्ट परिसर, झाबुआ)",
+        "ऑनलाइन वीडियो परामर्श (गूगल मीट / वीडियो कॉल)"
+      ],
       matterLabel: "मामले का विषय",
       matters: [
         "सिविल मुकदमे एवं रिट याचिकाएं",
@@ -432,7 +592,11 @@ export const translations = {
       items: [
         {
           question: "एडवोकेट तुषार भट्ट का न्यायालयीन अनुभव और क्षेत्राधिकार क्या है?",
-          answer: "एडवोकेट तुषार वाई. भट्ट के पास 25 से अधिक वर्षों का सक्रिय विधिक अनुभव है। वे मध्य प्रदेश उच्च न्यायालय (इंदौर एवं जबलपुर खंडपीठ), जिला एवं सत्र न्यायालयों, पारिवारिक न्यायालयों और राजस्व अधिकरणों (तहसीलदार, एसडीएम, कलेक्टर एवं राजस्व मंडल) में नियमित पैरवी करते हैं।"
+          answer: "एडवोकेट तुषार वाई. भट्ट (तुषार राव भट्ट) के पास 25 से अधिक वर्षों का सक्रिय विधिक अनुभव है। वे मध्य प्रदेश उच्च न्यायालय (इंदौर खंडपीठ), जिला एवं सत्र न्यायालय उज्जैन व झाबुआ, सिविल कोर्ट थांदला व पेटलावद, तथा राजस्व अधिकरणों (तहसीलदार, एसडीएम, कलेक्टर एवं राजस्व मंडल) में नियमित पैरवी करते हैं।"
+        },
+        {
+          question: "एडवोकेट तुषार भट्ट के कार्यालय कहाँ स्थित हैं?",
+          answer: "एडवोकेट भट्ट दो कार्यालयों से सेवाएं देते हैं: (1) प्रधान कार्यालय उज्जैन में 17-B अरिहंत विक्रम नगर, सेठी नगर; तथा (2) क्षेत्रीय कार्यालय थांदला (जिला झाबुआ) में सिविल कोर्ट परिसर, तहसील कार्यालय के समीप। साथ ही वे पूरे भारत एवं विदेशों में रहने वाले मुवक्किलों के लिए वीडियो कॉन्फ्रेंस परामर्श भी प्रदान करते हैं।"
         },
         {
           question: "प्रारंभिक कानूनी परामर्श के समय कौन-से दस्तावेज लाने चाहिए?",
@@ -447,12 +611,8 @@ export const translations = {
           answer: "हाँ। मध्य प्रदेश भू-राजस्व संहिता (MPLRC) में गहन विशेषज्ञता के साथ, हमारे चेम्बर्स पूरे प्रदेश में किसानों, भू-स्वामियों और संस्थाओं के बंटवारा, सीमांकन, प्रतिकूल कब्जा, नामांतरण और राजस्व अपीलों में प्रतिनिधित्व करते हैं।"
         },
         {
-          question: "क्या बाहर रहने वाले या प्रवासी भारतीयों (NRI) के लिए ऑनलाइन परामर्श उपलब्ध है?",
-          answer: "हाँ, मध्य प्रदेश में संपत्ति, उत्तराधिकार अथवा व्यावसायिक हितों वाले बाहर रहने वाले क्लाइंट्स के लिए हम गूगल मीट / जूम के माध्यम से सुरक्षित वीडियो कॉन्फ्रेंस परामर्श नियमित रूप से प्रदान करते हैं।"
-        },
-        {
-          question: "मुकदमेबाजी और कानूनी सलाह की फीस प्रक्रिया क्या है?",
-          answer: "व्यावसायिक फीस मामले की जटिलता, न्यायालय के स्तर, आवश्यक शोध और कार्य के स्वरूप (प्रति पेशी, चरणबद्ध अथवा रिटेनर) के आधार पर पूर्ण पारदर्शिता के साथ तय की जाती है। औपचारिक शुरुआत से पूर्व फीस का स्पष्ट विवरण साझा किया जाता है।"
+          question: "एडवोकेट भट्ट के न्यायालयीन प्रकरणों का सत्यापन कैसे किया जा सकता है?",
+          answer: "एडवोकेट भट्ट के प्रकरण भारत सरकार के आधिकारिक ई-कोर्ट्स पोर्टल (ecourtsindia.com) पर 'Advocate Tushar Rao Bhatt' एवं 'Shri Tushar Bhatt Advocate' के नाम से सार्वजनिक रूप से सत्यापित किए जा सकते हैं, जिसमें थांदला, झाबुआ, पेटलावद एवं उच्च न्यायालय के 350+ मामले दर्ज हैं।"
         }
       ]
     },
@@ -475,11 +635,19 @@ export const translations = {
         { name: "होम", href: "#hero" },
         { name: "अधिवक्ता परिचय", href: "#about" },
         { name: "प्रैक्टिस क्षेत्र", href: "#practice-areas" },
+        { name: "सत्यापित प्रकरण", href: "#cases" },
         { name: "क्लाइंट अनुभव", href: "#testimonials" },
         { name: "प्रश्नोत्तर", href: "#faq" },
-        { name: "चेम्बर संपर्क", href: "#contact-info" }
+        { name: "कार्यालय व संपर्क", href: "#contact-info" }
       ],
-      chamberTitle: "चेम्बर कार्यालय",
+      chamberTitle: "दोनों चेम्बर कार्यालय",
+      ujjainLabel: "उज्जैन प्रधान कार्यालय:",
+      ujjainAddr: "17-B अरिहंत विक्रम नगर, सेठी नगर, उज्जैन, म.प्र. — 456010",
+      thandlaLabel: "थांदला क्षेत्रीय कार्यालय:",
+      thandlaAddr: "सिविल कोर्ट परिसर, तहसील कार्यालय के समीप, थांदला, जिला झाबुआ, म.प्र. — 457777",
+      verifiedProfilesHeading: "सत्यापित प्रोफाइल एवं अभिलेख:",
+      ecourtsLinkText: "ई-कोर्ट्स भारत (352+ प्रकरण)",
+      googleLinkText: "गूगल बिजनेस प्रोफाइल",
       disclaimerTitle: "बार काउंसिल ऑफ इंडिया वैधानिक अस्वीकरण:",
       disclaimer: "बार काउंसिल ऑफ इंडिया के नियमों के अनुसार अधिवक्ताओं को वकालत का विज्ञापन अथवा प्रचार करने की अनुमति नहीं है। इस वेबसाइट पर दी गई जानकारी केवल व्यक्तिगत ज्ञान एवं सूचनात्मक संदर्भ के लिए है, तथा यह किसी भी प्रकार का कानूनी परामर्श या मुवक्किल संबंध स्थापित नहीं करती है।",
       rights: `© ${new Date().getFullYear()} एडवोकेट तुषार वाई. भट्ट। 25 वर्षों की समर्पित विधिक प्रैक्टिस। सर्वाधिकार सुरक्षित।`

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MdGavel, MdShield, MdCheckCircle, MdError, MdPerson, MdEmail, MdPhone, MdCategory, MdEditNote } from 'react-icons/md';
+import { MdGavel, MdShield, MdCheckCircle, MdError, MdPerson, MdEmail, MdPhone, MdCategory, MdEditNote, MdLocationCity } from 'react-icons/md';
 import { useLanguage } from '../context/LanguageContext';
 
 const ContactForm = () => {
@@ -9,6 +9,7 @@ const ContactForm = () => {
         name: '',
         email: '',
         phone: '',
+        chamber: t.form.chambersList ? t.form.chambersList[0] : 'Ujjain Chamber',
         practiceArea: t.form.matters[0] || 'Civil Litigation & Writs',
         message: '',
         confidentialityConsent: true
@@ -227,6 +228,31 @@ const ContactForm = () => {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Preferred Chamber Dropdown */}
+                        {t.form.chambersList && (
+                            <div style={inputWrapperStyle}>
+                                <label htmlFor="chamber" style={labelStyle}>{t.form.chamberLabel}</label>
+                                <div style={{ position: 'relative' }}>
+                                    <MdLocationCity style={iconStyle} />
+                                    <select
+                                        id="chamber"
+                                        name="chamber"
+                                        value={formData.chamber}
+                                        onChange={handleChange}
+                                        style={{
+                                            ...inputFieldStyle,
+                                            appearance: 'auto',
+                                            cursor: 'pointer'
+                                        }}
+                                    >
+                                        {t.form.chambersList.map((ch, idx) => (
+                                            <option key={idx} value={ch}>{ch}</option>
+                                        ))}
+                                    </select>
+                                </div>
+                            </div>
+                        )}
 
                         {/* Case Overview */}
                         <div style={{ marginBottom: '1.5rem' }}>

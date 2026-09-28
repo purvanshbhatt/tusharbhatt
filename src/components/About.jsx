@@ -162,15 +162,25 @@ const About = () => {
                             ))}
                         </div>
 
-                        {/* CTA Button */}
-                        <a 
-                            href="#contact" 
-                            className="m3-btn m3-btn-filled"
-                            style={{ display: 'inline-flex' }}
-                        >
-                            <span>{t.about.cta}</span>
-                            <MdArrowForward />
-                        </a>
+                        {/* CTA Buttons */}
+                        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                            <a 
+                                href="#contact-info" 
+                                className="m3-btn m3-btn-filled"
+                                style={{ display: 'inline-flex' }}
+                            >
+                                <span>{t.about.cta}</span>
+                                <MdArrowForward />
+                            </a>
+                            <a 
+                                href="#cases" 
+                                className="m3-btn m3-btn-outlined"
+                                style={{ display: 'inline-flex' }}
+                            >
+                                <MdBalance />
+                                <span>{t.about.viewCasesCta}</span>
+                            </a>
+                        </div>
                     </motion.div>
 
                     {/* Image Content */}

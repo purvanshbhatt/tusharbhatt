@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdPhone, MdEmail, MdLocationOn, MdShield } from 'react-icons/md';
+import { MdPhone, MdEmail, MdLocationOn, MdShield, MdOpenInNew } from 'react-icons/md';
 import { useLanguage } from '../context/LanguageContext';
 import logoFull from '../assets/logo-full.png';
 
@@ -117,7 +117,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Column 4: Chamber Details */}
+                    {/* Column 4: Dual Chamber Details & Profiles */}
                     <div>
                         <h4 style={{ 
                             color: '#ffffff', 
@@ -127,18 +127,51 @@ const Footer = () => {
                         }}>
                             {t.footer.chamberTitle}
                         </h4>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', fontSize: '0.92rem', color: '#b0bfdb' }}>
-                            <div style={{ display: 'flex', gap: '0.6rem' }}>
-                                <MdLocationOn style={{ color: 'var(--md-sys-color-tertiary)', fontSize: '1.3rem', flexShrink: 0, marginTop: '2px' }} />
-                                <span>17-B Arihant Vikram Nagar, Sethi Nagar, Ujjain, MP — 456010</span>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', fontSize: '0.9rem', color: '#b0bfdb' }}>
+                            <div>
+                                <div style={{ color: 'var(--md-sys-color-tertiary)', fontWeight: 700, fontSize: '0.8rem', textTransform: 'uppercase', marginBottom: '0.2rem' }}>
+                                    {t.footer.ujjainLabel}
+                                </div>
+                                <div style={{ display: 'flex', gap: '0.5rem' }}>
+                                    <MdLocationOn style={{ color: 'var(--md-sys-color-tertiary)', fontSize: '1.2rem', flexShrink: 0, marginTop: '2px' }} />
+                                    <span>{t.footer.ujjainAddr}</span>
+                                </div>
                             </div>
-                            <div style={{ display: 'flex', gap: '0.6rem' }}>
-                                <MdPhone style={{ color: 'var(--md-sys-color-tertiary)', fontSize: '1.2rem', flexShrink: 0 }} />
-                                <a href="tel:+919425486154" style={{ color: 'inherit' }}>+91 94254 86154</a>
+
+                            <div>
+                                <div style={{ color: 'var(--md-sys-color-tertiary)', fontWeight: 700, fontSize: '0.8rem', textTransform: 'uppercase', marginBottom: '0.2rem' }}>
+                                    {t.footer.thandlaLabel}
+                                </div>
+                                <div style={{ display: 'flex', gap: '0.5rem' }}>
+                                    <MdLocationOn style={{ color: 'var(--md-sys-color-tertiary)', fontSize: '1.2rem', flexShrink: 0, marginTop: '2px' }} />
+                                    <span>{t.footer.thandlaAddr}</span>
+                                </div>
                             </div>
-                            <div style={{ display: 'flex', gap: '0.6rem' }}>
-                                <MdEmail style={{ color: 'var(--md-sys-color-tertiary)', fontSize: '1.2rem', flexShrink: 0 }} />
-                                <a href="mailto:adv.tusharbhatt@gmail.com" style={{ color: 'inherit' }}>adv.tusharbhatt@gmail.com</a>
+
+                            <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '0.75rem' }}>
+                                <div style={{ color: '#ffffff', fontWeight: 600, fontSize: '0.82rem', marginBottom: '0.5rem' }}>
+                                    {t.footer.verifiedProfilesHeading}
+                                </div>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                                    <a 
+                                        href="https://ecourtsindia.com/lawyer/tushar-rao-bhatt"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ color: 'var(--md-sys-color-tertiary)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.35rem', fontSize: '0.84rem' }}
+                                    >
+                                        <span>{t.footer.ecourtsLinkText}</span>
+                                        <MdOpenInNew style={{ fontSize: '0.85rem' }} />
+                                    </a>
+                                    <a 
+                                        href="https://share.google/MRr526qpjPLtuISDq"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ color: 'var(--md-sys-color-tertiary)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.35rem', fontSize: '0.84rem' }}
+                                    >
+                                        <span>{t.footer.googleLinkText}</span>
+                                        <MdOpenInNew style={{ fontSize: '0.85rem' }} />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -32,6 +32,7 @@ const Navbar = () => {
         { name: t.nav.home, href: '#hero' },
         { name: t.nav.about, href: '#about' },
         { name: t.nav.practice, href: '#practice-areas' },
+        { name: t.nav.cases, href: '#cases' },
         { name: t.nav.testimonials, href: '#testimonials' },
         { name: t.nav.faq, href: '#faq' },
         { name: t.nav.contact, href: '#contact-info' },

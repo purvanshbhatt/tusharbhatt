@@ -162,9 +162,9 @@ const Hero = () => {
                     }}
                 >
                     <a
-                        href="#contact"
+                        href="#contact-info"
                         className="m3-btn m3-btn-filled"
-                        style={{ fontSize: '1rem', padding: '0.9rem 2.2rem' }}
+                        style={{ fontSize: '1rem', padding: '0.85rem 1.8rem' }}
                     >
                         <MdGavel style={{ fontSize: '1.2rem' }} />
                         <span>{t.hero.button}</span>
@@ -172,11 +172,19 @@ const Hero = () => {
                     </a>
 
                     <a
-                        href="#practice-areas"
+                        href="#cases"
                         className="m3-btn m3-btn-outlined-light"
-                        style={{ fontSize: '1rem', padding: '0.9rem 2.2rem' }}
+                        style={{ fontSize: '1rem', padding: '0.85rem 1.8rem' }}
                     >
                         <MdBalance style={{ fontSize: '1.2rem' }} />
+                        <span>{t.hero.casesBtn}</span>
+                    </a>
+
+                    <a
+                        href="#practice-areas"
+                        className="m3-btn m3-btn-outlined-light"
+                        style={{ fontSize: '1rem', padding: '0.85rem 1.8rem' }}
+                    >
                         <span>{t.hero.practiceBtn}</span>
                     </a>
                 </motion.div>
