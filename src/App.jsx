@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { LanguageProvider } from './context/LanguageContext';
 import Loader from './components/Loader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -13,11 +14,11 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import FloatingContactButton from './components/FloatingContactButton';
 
-function App() {
+function MainApp() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 2500);
+        const timer = setTimeout(() => setLoading(false), 2000);
         return () => clearTimeout(timer);
     }, []);
 
@@ -43,6 +44,14 @@ function App() {
                 </main>
             )}
         </>
+    );
+}
+
+function App() {
+    return (
+        <LanguageProvider>
+            <MainApp />
+        </LanguageProvider>
     );
 }
 
