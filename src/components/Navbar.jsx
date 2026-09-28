@@ -33,6 +33,8 @@ const Navbar = () => {
         { name: t.nav.about, href: '#about' },
         { name: t.nav.practice, href: '#practice-areas' },
         { name: t.nav.cases, href: '#cases' },
+        { name: t.nav.team, href: '#team' },
+        { name: t.nav.careers, href: '#careers' },
         { name: t.nav.testimonials, href: '#testimonials' },
         { name: t.nav.faq, href: '#faq' },
         { name: t.nav.contact, href: '#contact-info' },
@@ -104,8 +106,8 @@ const Navbar = () => {
                 </a>
 
                 {/* Desktop Menu */}
-                <div className="desktop-menu" style={{ display: 'flex', alignItems: 'center', gap: '1.15rem' }}>
-                    <div style={{ display: 'flex', gap: '0.35rem' }}>
+                <div className="desktop-menu" style={{ display: 'flex', alignItems: 'center', gap: '0.9rem' }}>
+                    <div style={{ display: 'flex', gap: '0.15rem' }}>
                         {navLinks.map((link, i) => (
                             <a
                                 key={i}
@@ -113,11 +115,12 @@ const Navbar = () => {
                                 className="nav-item-link"
                                 style={{
                                     color: '#f0f4fc',
-                                    fontSize: '0.88rem',
-                                    fontWeight: 500,
-                                    padding: '0.45rem 0.75rem',
+                                    fontSize: '0.82rem',
+                                    fontWeight: 600,
+                                    padding: '0.4rem 0.55rem',
                                     borderRadius: 'var(--md-sys-shape-corner-full)',
                                     transition: 'all 0.2s ease',
+                                    whiteSpace: 'nowrap'
                                 }}
                             >
                                 {link.name}

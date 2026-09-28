@@ -7,6 +7,8 @@ import Hero from './components/Hero';
 import About from './components/About';
 import PracticeAreas from './components/PracticeAreas';
 import VerifiedCases from './components/VerifiedCases';
+import Team from './components/Team';
+import Careers from './components/Careers';
 import Contact from './components/Contact';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
@@ -37,6 +39,8 @@ function MainApp() {
                     <About />
                     <PracticeAreas />
                     <VerifiedCases />
+                    <Team />
+                    <Careers />
                     <Contact />
                     <ContactForm />
                     <Testimonials />

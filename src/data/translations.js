@@ -11,6 +11,8 @@ export const translations = {
       about: "About",
       practice: "Practice Areas",
       cases: "Verified Cases",
+      team: "Chamber Team",
+      careers: "Careers & Internships",
       testimonials: "Testimonials",
       faq: "FAQ",
       contact: "Chambers",
@@ -224,6 +226,176 @@ export const translations = {
       requiredError: "Please complete all required fields.",
       successMsg: "Your consultation request has been securely recorded. Chamber staff will contact you promptly to schedule the appointment."
     },
+    team: {
+      eyebrow: "Chamber Legal Counsel & Staff",
+      title: "Legal Team & Chamber Associates",
+      subtitle: "Led by Advocate Tushar Y. Bhatt, our chambers integrate seasoned trial counsel, legal researchers, and procedural registry staff across Ujjain, Indore High Court, and Thandla/Jhabua district courts.",
+      seniorCounselLabel: "Head of Chambers & Senior Counsel",
+      leadAdvocate: {
+        name: "Advocate Tushar Y. Bhatt",
+        alias: "(Tushar Rao Bhatt)",
+        role: "Senior Legal Counsel & Chamber Head",
+        experience: "25+ Years of Dedicated Practice (Since 1999)",
+        barCouncil: "State Bar Council of Madhya Pradesh (Enrolled Advocate)",
+        desc: "Quarter-century of formidable courtroom advocacy. Specializes in complex civil suits, high-stakes land revenue appeals under MPLRC, property title disputes, and trial defense across the High Court of MP and District Judiciary.",
+        jurisdictions: [
+          "High Court of MP (Indore Bench)",
+          "Civil Court Thandla (331+ Matters)",
+          "District & Sessions Court Jhabua",
+          "Civil Court Petlawad",
+          "Ujjain & Indore District Judiciary"
+        ],
+        badge: "Senior Counsel • 25+ Years at the Bar"
+      },
+      members: [
+        {
+          role: "Senior Associate Advocate",
+          area: "Civil Litigation & Revenue Law (MPLRC)",
+          qualification: "LL.B. • Enrolled Advocate, MP Bar Council",
+          focus: "Original civil suits, property partition, boundary disputes, revenue appeals before Sub-Divisional Officer (SDO) and Collector, mutation, and tenancy rights.",
+          forums: "Ujjain & Jhabua District Judiciary, Revenue Courts",
+          icon: "balance"
+        },
+        {
+          role: "Associate Advocate",
+          area: "Trial Practice & Criminal Defense",
+          qualification: "LL.B. • Enrolled Advocate, MP Bar Council",
+          focus: "Magistrate & Sessions trial representation, regular and anticipatory bail petitions, Sec 138 Negotiable Instruments Act (Cheque Bounce), and evidentiary cross-examination.",
+          forums: "Civil Court Thandla, Sessions Court Jhabua, Ujjain",
+          icon: "gavel"
+        },
+        {
+          role: "Legal Researcher & Case Analyst",
+          area: "Judicial Precedents & High Court Drafting",
+          qualification: "B.A. LL.B. (Hons.) / LL.M.",
+          focus: "Supreme Court & High Court case law research (SCC, AIR, Manupatra), writ petition drafting, statutory interpretation, and legal opinion formulation.",
+          forums: "Chamber Research Wing, High Court Precedents",
+          icon: "search"
+        },
+        {
+          role: "Chamber Registry Clerk & eCourts Liaison",
+          area: "Court Filing & Judicial Records",
+          qualification: "Certified Legal Administrative Support",
+          focus: "Daily eCourts cause list tracking, filing of caveats and petitions, certified copy procurement, and judicial registry liaison across Ujjain and Thandla.",
+          forums: "District Court Registry, Tehsil Offices, eCourts Portal",
+          icon: "records"
+        }
+      ],
+      pillarsTitle: "Core Strengths of Our Chambers",
+      pillars: [
+        {
+          title: "Meticulous Trial Preparation",
+          desc: "Every matter is subjected to multi-level case briefing, comprehensive document indexing, and thorough evidentiary scrutiny before court hearings."
+        },
+        {
+          title: "Dual-Chamber Operational Reach",
+          desc: "Seamless legal coordination linking our Ujjain Head Chamber with our Thandla Regional Chamber (350+ eCourts documented matters)."
+        },
+        {
+          title: "Digital eCourts Integration",
+          desc: "Real-time daily cause list tracking, automated hearing updates, and digital record preservation ensuring no timeline is ever missed."
+        },
+        {
+          title: "Statutory Attorney Privilege",
+          desc: "Absolute confidentiality protected under Section 126 of the Indian Evidence Act. Every client conference and document is sacrosanct."
+        }
+      ]
+    },
+    careers: {
+      eyebrow: "Join The Chamber • Practice & Mentorship",
+      title: "Careers & Judicial Internships",
+      subtitle: "We welcome motivated law graduates, practicing advocates, and dedicated law students seeking rigorous trial experience, courtroom advocacy, and mentorship under a 25-year practitioner at the Bar.",
+      cultureBadge: "Mentorship-Driven Legal Practice",
+      cultureTitle: "Professional Growth in an Active Courtroom Chamber",
+      cultureDesc: "Working with Advocate Tushar Bhatt provides unvarnished, hands-on exposure to the pulse of Indian litigation — from drafting plaint pleadings and cross-examining witnesses to arguing complex revenue appeals and tracking 350+ live eCourts matters.",
+      perks: [
+        {
+          title: "Real Courtroom Exposure",
+          desc: "Regular attendance at court proceedings across High Court (Indore Bench), District & Sessions Courts, and Tehsil revenue benches."
+        },
+        {
+          title: "Mentorship by 25-Year Veteran",
+          desc: "Direct daily guidance on litigation strategy, case precedent research, and professional ethics from Advocate Tushar Bhatt."
+        },
+        {
+          title: "eCourts & Procedural Mastery",
+          desc: "Gain deep practical knowledge of court registry filing, certified copy applications, caveats, and eCourts tracking."
+        },
+        {
+          title: "Dual Chamber Network",
+          desc: "Opportunity to work across both our Ujjain Head Chamber and our Thandla/Jhabua Regional Chamber."
+        }
+      ],
+      openingsTitle: "Chamber Opportunities & Openings",
+      openings: [
+        {
+          id: "junior-associate",
+          title: "Junior Associate Advocate",
+          badge: "Full-Time Practice",
+          location: "Ujjain / Thandla Chambers",
+          eligibility: "LL.B. or B.A. LL.B. with valid State Bar Council enrollment. 0–3 years of litigation experience. Proficiency in Hindi and English legal drafting.",
+          responsibilities: [
+            "Drafting civil plaints, written statements, bail petitions, and legal notices.",
+            "Appearing before Civil Courts, Magistrate Courts, and Revenue Tribunals for routine hearings and motions.",
+            "Client conference assistance, document indexing, and case summary preparation.",
+            "Tracking daily cause lists and managing judicial timelines across eCourts."
+          ],
+          cta: "Apply for Junior Associate"
+        },
+        {
+          id: "internship",
+          title: "Judicial Intern / Law Trainee",
+          badge: "4 to 8 Weeks (Rolling / Summer / Winter)",
+          location: "Ujjain / Thandla Chambers (In-Person / Hybrid)",
+          eligibility: "Law students pursuing 3rd to 5th year of 5-year Integrated Law (B.A. LL.B. / B.B.A. LL.B.) or 2nd/3rd year of 3-year LL.B. from a recognized university.",
+          responsibilities: [
+            "Conducting in-depth legal research on SCC Online, AIR, and Manupatra for ongoing trials.",
+            "Drafting case briefs, research memorandums, and comparative case law tables.",
+            "Observing court arguments, witness examination, and chamber client consultations.",
+            "Assisting with eCourts digital case tracking and registry filing procedures."
+          ],
+          cta: "Apply for Internship"
+        },
+        {
+          id: "paralegal-clerk",
+          title: "Legal Research Assistant / Chamber Clerk",
+          badge: "Full-Time / Part-Time",
+          location: "Thandla / Ujjain Chamber",
+          eligibility: "Prior clerical experience in court registry, revenue offices, or legal documentation. Working knowledge of Hindi typing and computer applications.",
+          responsibilities: [
+            "Procuring certified copies of court orders, revenue maps, and registry deeds.",
+            "Managing physical case files, docketing court notices, and registry submissions.",
+            "Liaising with court registry officers and administrative branches.",
+            "Coordinating client appointments and conference room schedules."
+          ],
+          cta: "Apply for Clerk / Assistant"
+        }
+      ],
+      howToApplyTitle: "Application & Selection Process",
+      howToApplyDesc: "We invite candidates with strong legal analytical skills, dedication to professional integrity, and a passion for litigation to submit their applications.",
+      steps: [
+        {
+          step: "01",
+          title: "Prepare Your Dossier",
+          desc: "Update your Curriculum Vitae (CV) along with a brief Statement of Purpose (max 300 words) and an optional sample legal draft or research note."
+        },
+        {
+          step: "02",
+          title: "Submit via Official Email",
+          desc: "Send your email to adv.tusharbhatt@gmail.com with the subject line formatted as: [Application] Position - Your Full Name - Preferred Chamber (Ujjain/Thandla)."
+        },
+        {
+          step: "03",
+          title: "Chamber Review & Interview",
+          desc: "Shortlisted candidates will be contacted for an in-person or virtual interview with Advocate Tushar Bhatt to assess practical legal aptitude."
+        }
+      ],
+      emailLabel: "Official Chamber Email for Applications:",
+      phoneLabel: "Chamber Inquiries & Helpline:",
+      applyEmailBtn: "Email Application to Chamber",
+      callChamberBtn: "Call Chamber Office",
+      subjectNote: "Subject format: [Application] Position Name - Full Name"
+    },
     testimonials: {
       eyebrow: "Track Record of Trust",
       title: "Client Case Experiences",
@@ -306,6 +478,8 @@ export const translations = {
         { name: "Advocate Profile", href: "#about" },
         { name: "Practice Areas", href: "#practice-areas" },
         { name: "Verified Cases", href: "#cases" },
+        { name: "Chamber Team", href: "#team" },
+        { name: "Careers & Internships", href: "#careers" },
         { name: "Client Feedback", href: "#testimonials" },
         { name: "Consultation FAQ", href: "#faq" },
         { name: "Chambers & Contact", href: "#contact-info" }
@@ -341,6 +515,8 @@ export const translations = {
       about: "परिचय",
       practice: "प्रैक्टिस क्षेत्र",
       cases: "वास्तविक प्रकरण",
+      team: "विधिक दल",
+      careers: "करियर व इंटर्नशिप",
       testimonials: "प्रशंसापत्र",
       faq: "प्रश्नोत्तर",
       contact: "कार्यालय",
@@ -554,6 +730,176 @@ export const translations = {
       requiredError: "कृपया सभी आवश्यक फील्ड भरें।",
       successMsg: "आपका परामर्श अनुरोध सफलतापूर्वक दर्ज कर लिया गया है। चेम्बर स्टाफ शीघ्र ही आपसे संपर्क कर समय निश्चित करेगा।"
     },
+    team: {
+      eyebrow: "चेम्बर्स के विधिक सलाहकार एवं दल",
+      title: "विधिक चेम्बर दल एवं सहयोगी अधिवक्ता",
+      subtitle: "वरिष्ठ अधिवक्ता तुषार वाई. भट्ट के नेतृत्व में हमारा विधिक दल उज्जैन, इंदौर उच्च न्यायालय और थांदला/झाबुआ जिला न्यायालयों में अनुभवी वकीलों, शोधकर्ताओं और कार्यालय सहायकों के साथ मुवक्किलों को सशक्त न्याय दिलाता है।",
+      seniorCounselLabel: "चेम्बर प्रमुख एवं वरिष्ठ विधिक सलाहकार",
+      leadAdvocate: {
+        name: "एडवोकेट तुषार वाई. भट्ट",
+        alias: "(तुषार राव भट्ट)",
+        role: "वरिष्ठ विधिक सलाहकार एवं चेम्बर प्रमुख",
+        experience: "25+ वर्षों की समर्पित विधिक प्रैक्टिस (1999 से)",
+        barCouncil: "स्टेट बार काउंसिल ऑफ मध्य प्रदेश (पंजीकृत अधिवक्ता)",
+        desc: "ढाई दशक का सशक्त न्यायालयीन अनुभव। मध्य प्रदेश उच्च न्यायालय, जिला एवं सत्र न्यायालयों तथा राजस्व मंडल के समक्ष जटिल सिविल वाद, म.प्र. भू-राजस्व संहिता (MPLRC) की अपीलों, संपत्ति स्वामित्व विवादों और आपराधिक मुकदमों में प्रभावी पैरवी।",
+        jurisdictions: [
+          "मध्य प्रदेश उच्च न्यायालय (इंदौर खंडपीठ)",
+          "सिविल कोर्ट थांदला (331+ दर्ज मामले)",
+          "जिला एवं सत्र न्यायालय झाबुआ",
+          "सिविल कोर्ट पेटलावद",
+          "उज्जैन एवं इंदौर जिला न्यायपालिका"
+        ],
+        badge: "वरिष्ठ अधिवक्ता • 25+ वर्षों का अनुभव"
+      },
+      members: [
+        {
+          role: "वरिष्ठ सहयोगी अधिवक्ता",
+          area: "सिविल मुकदमे एवं राजस्व विधि (MPLRC)",
+          qualification: "एलएलबी • पंजीकृत अधिवक्ता, म.प्र. बार काउंसिल",
+          focus: "मूल सिविल वाद, संपत्ति बंटवारा, सीमांकन विवाद, अनुविभागीय अधिकारी (SDO) एवं कलेक्टर के समक्ष राजस्व अपीलें, नामांतरण और काश्तकारी अधिकार।",
+          forums: "उज्जैन एवं झाबुआ जिला न्यायपालिका, राजस्व अधिकरण",
+          icon: "balance"
+        },
+        {
+          role: "सहयोगी अधिवक्ता",
+          area: "ट्रायल प्रैक्टिस एवं आपराधिक बचाव",
+          qualification: "एलएलबी • पंजीकृत अधिवक्ता, म.प्र. बार काउंसिल",
+          focus: "न्यायिक मजिस्ट्रेट एवं सत्र न्यायालयों में पैरवी, नियमित एवं अग्रिम जमानत आवेदन, परक्राम्य लिखत अधिनियम धारा 138 (चेक बाउंस), और गवाहों का प्रतिपरीक्षण।",
+          forums: "सिविल कोर्ट थांदला, सत्र न्यायालय झाबुआ, उज्जैन",
+          icon: "gavel"
+        },
+        {
+          role: "विधिक शोधकर्ता एवं केस विश्लेषक",
+          area: "न्यायिक दृष्टांत एवं उच्च न्यायालय ड्राफ्टिंग",
+          qualification: "बी.ए. एलएलबी (ऑनर्स) / एलएल.एम.",
+          focus: "सर्वोच्च न्यायालय व उच्च न्यायालयों के विधि दृष्टांतों का शोध (SCC, AIR, Manupatra), रिट याचिका ड्राफ्टिंग, कानूनी व्याख्या और विधिक राय तैयार करना।",
+          forums: "चेम्बर शोध विभाग, उच्च न्यायालय दृष्टांत",
+          icon: "search"
+        },
+        {
+          role: "चेम्बर रजिस्ट्री क्लर्क एवं ई-कोर्ट्स समन्वयक",
+          area: "न्यायालयीन फाइलिंग एवं अभिलेख प्रबंधन",
+          qualification: "प्रमाणित विधिक प्रशासनिक सहायक",
+          focus: "दैनिक ई-कोर्ट्स कॉज लिस्ट ट्रैकिंग, कैविएट एवं याचिका फाइलिंग, आदेशों की प्रमाणित प्रतिलिपि प्राप्ति, और उज्जैन व थांदला कोर्ट रजिस्ट्री समन्वय।",
+          forums: "जिला कोर्ट रजिस्ट्री, तहसील कार्यालय, ई-कोर्ट्स पोर्टल",
+          icon: "records"
+        }
+      ],
+      pillarsTitle: "हमारे चेम्बर्स की प्रमुख कार्य-शक्तियां",
+      pillars: [
+        {
+          title: "गहन न्यायालयीन तैयारी",
+          desc: "प्रत्येक मामले में कोर्ट सुनवाई से पूर्व बहु-स्तरीय केस ब्रीफिंग, दस्तावेजों का अनुक्रमण (Indexing) और साक्ष्यों की सूक्ष्म जांच की जाती है।"
+        },
+        {
+          title: "दोहरे चेम्बर्स की व्यापक पहुंच",
+          desc: "उज्जैन प्रधान कार्यालय एवं थांदला क्षेत्रीय कार्यालय (350+ ई-कोर्ट्स दर्ज मामले) के बीच सुदृढ़ और त्वरित विधिक समन्वय।"
+        },
+        {
+          title: "डिजिटल ई-कोर्ट्स एकीकरण",
+          desc: "दैनिक कॉज लिस्ट की रियल-टाइम ट्रैकिंग, स्वचालित हियरिंग अपडेट्स और डिजिटल रिकॉर्ड्स से सुनिश्चित होता है कि कोई तारीख न छूटे।"
+        },
+        {
+          title: "पूर्ण वैधानिक गोपनीयता",
+          desc: "भारतीय साक्ष्य अधिनियम की धारा 126 के अंतर्गत पूर्ण गोपनीयता सुरक्षित। मुवक्किल का प्रत्येक दस्तावेज और चर्चा पूर्णतः गोपनीय रहती है।"
+        }
+      ]
+    },
+    careers: {
+      eyebrow: "चेम्बर से जुड़ें • वकालत एवं प्रशिक्षण",
+      title: "करियर एवं न्यायिक इंटर्नशिप",
+      subtitle: "हम विधि स्नातकों, युवा अधिवक्ताओं एवं कानून के विद्यार्थियों का स्वागत करते हैं जो वास्तविक न्यायालयीन पैरवी, कोर्ट ड्राफ्टिंग एवं 25 वर्षों के अनुभवी अधिवक्ता से सीधा मार्गदर्शन प्राप्त करना चाहते हैं।",
+      cultureBadge: "वरिष्ठ मार्गदर्शन आधारित वकालत",
+      cultureTitle: "सक्रिय कोर्ट चेम्बर में व्यावसायिक प्रगति",
+      cultureDesc: "एडवोकेट तुषार भट्ट के साथ कार्य करने से भारतीय न्यायालयीन प्रणाली की वास्तविक कार्यप्रणाली सीखने को मिलती है — जिसमें दावे-प्रतिदावे की ड्राफ्टिंग, साक्ष्य परीक्षण, राजस्व अपीलों में बहस और 350+ लाइव ई-कोर्ट्स प्रकरणों का प्रबंधन शामिल है।",
+      perks: [
+        {
+          title: "प्रत्यक्ष अदालती अनुभव",
+          desc: "उच्च न्यायालय (इंदौर खंडपीठ), जिला एवं सत्र न्यायालयों तथा राजस्व अधिकरणों की नियमित अदालती कार्यवाहियों में उपस्थिति।"
+        },
+        {
+          title: "25+ वर्षों का वरिष्ठ मार्गदर्शन",
+          desc: "केस रणनीति, न्यायिक दृष्टांत शोध और व्यावसायिक नैतिकता पर वरिष्ठ अधिवक्ता तुषार भट्ट से दैनिक सीधा मार्गदर्शन।"
+        },
+        {
+          title: "ई-कोर्ट्स व प्रक्रियात्मक दक्षता",
+          desc: "कोर्ट रजिस्ट्री फाइलिंग, प्रमाणित प्रतिलिपि आवेदन, कैविएट और ई-कोर्ट्स डिजिटल ट्रैकिंग का गहन व्यावहारिक ज्ञान।"
+        },
+        {
+          title: "दोहरे चेम्बर्स का अनुभव",
+          desc: "उज्जैन प्रधान चेम्बर तथा थांदला/झाबुआ क्षेत्रीय चेम्बर दोनों में कार्य करने का दोहरा अनुभव।"
+        }
+      ],
+      openingsTitle: "चेम्बर में अवसर एवं रिक्तियां",
+      openings: [
+        {
+          id: "junior-associate",
+          title: "कनिष्ठ सहयोगी अधिवक्ता (Junior Associate)",
+          badge: "पूर्णकालिक वकालत",
+          location: "उज्जैन / थांदला चेम्बर्स",
+          eligibility: "एलएलबी या बी.ए. एलएलबी डिग्री एवं राज्य बार काउंसिल में वैध पंजीकरण। 0–3 वर्ष का अदालती अनुभव। हिन्दी व अंग्रेजी लीगल ड्राफ्टिंग में कुशलता।",
+          responsibilities: [
+            "सिविल दावे, प्रतिदावे, जमानत याचिकाएं और लीगल नोटिस तैयार करना।",
+            "सिविल कोर्ट, मजिस्ट्रेट कोर्ट और राजस्व अधिकरणों में तारीखों पर उपस्थिति।",
+            "मुवक्किलों से चर्चा, दस्तावेजों का मिलान और केस सारांश तैयार करना।",
+            "दैनिक कॉज लिस्ट ट्रैक करना और ई-कोर्ट्स पर तारीखों का प्रबंधन।"
+          ],
+          cta: "एसोसिएट पद हेतु आवेदन करें"
+        },
+        {
+          id: "internship",
+          title: "न्यायिक इंटर्न / विधि प्रशिक्षु (Legal Intern)",
+          badge: "4 से 8 सप्ताह (समर / विंटर / रोलिंग)",
+          location: "उज्जैन / थांदला चेम्बर्स (व्यक्तिगत / हाइब्रिड)",
+          eligibility: "मान्यता प्राप्त विधि संस्थान से 5 वर्षीय विधि पाठ्यक्रम (तृतीय से पंचम वर्ष) अथवा 3 वर्षीय एलएलबी (द्वितीय/तृतीय वर्ष) के विद्यार्थी।",
+          responsibilities: [
+            "चल रहे मुकदमों के लिए SCC Online, AIR एवं Manupatra पर विधिक शोध करना।",
+            "केस ब्रीफ, रिसर्च मेमोरेंडम और विधि दृष्टांतों की तुलनात्मक तालिका तैयार करना।",
+            "कोर्ट में बहस, गवाहों के बयान और चेम्बर परामर्श की कार्यवाहियों का अवलोकन।",
+            "डिजिटल ई-कोर्ट्स ट्रैकिंग और कोर्ट रजिस्ट्री प्रक्रियाओं में सहयोग करना।"
+          ],
+          cta: "इंटर्नशिप हेतु आवेदन करें"
+        },
+        {
+          id: "paralegal-clerk",
+          title: "विधिक शोध सहायक / चेम्बर क्लर्क",
+          badge: "पूर्णकालिक / अंशकालिक",
+          location: "थांदला / उज्जैन चेम्बर",
+          eligibility: "कोर्ट रजिस्ट्री, राजस्व कार्यालयों या दस्तावेजीकरण में पूर्व अनुभव। कम्प्यूटर और हिन्दी टाइपिंग का व्यावहारिक ज्ञान।",
+          responsibilities: [
+            "न्यायालयीन आदेशों, राजस्व नक्शों और रजिस्टर्ड दस्तावेजों की प्रमाणित प्रतियां प्राप्त करना।",
+            "केस फाइलों का व्यवस्थित रख-रखाव, नोटिस तामीली और रजिस्ट्री दस्तावेज जमा करना।",
+            "कोर्ट रजिस्ट्री अधिकारियों और प्रशासनिक शाखाओं से समन्वय।",
+            "मुवक्किलों की मुलाकातों और चेम्बर मीटिंग्स का समय निर्धारण।"
+          ],
+          cta: "क्लर्क / सहायक पद हेतु आवेदन करें"
+        }
+      ],
+      howToApplyTitle: "आवेदन एवं चयन प्रक्रिया",
+      howToApplyDesc: "हम उत्कृष्ट विधिक समझ, सत्यनिष्ठा और वकालत के प्रति समर्पित उम्मीदवारों को अपने चेम्बर्स में आवेदन के लिए आमंत्रित करते हैं।",
+      steps: [
+        {
+          step: "01",
+          title: "आवेदन दस्तावेज तैयार करें",
+          desc: "अपना अद्यतन बायोडाटा (CV), संक्षिप्त उद्देश्य पत्र (Statement of Purpose - अधिकतम 300 शब्द) और यदि उपलब्ध हो तो कोई लीगल ड्राफ्ट नमूना संलग्न करें।"
+        },
+        {
+          step: "02",
+          title: "आधिकारिक ईमेल पर भेजें",
+          desc: "ईमेल adv.tusharbhatt@gmail.com पर भेजें। Subject में लिखें: [Application] पद का नाम - आपका नाम - पसंदीदा चेम्बर (उज्जैन/थांदला)।"
+        },
+        {
+          step: "03",
+          title: "चेम्बर समीक्षा एवं साक्षात्कार",
+          desc: "चयनित उम्मीदवारों को व्यावहारिक विधिक योग्यता के मूल्यांकन हेतु एडवोकेट तुषार भट्ट के साथ व्यक्तिगत अथवा वीडियो साक्षात्कार हेतु सूचित किया जाएगा।"
+        }
+      ],
+      emailLabel: "आवेदन हेतु चेम्बर का आधिकारिक ईमेल:",
+      phoneLabel: "चेम्बर पूछताछ एवं हेल्पलाइन:",
+      applyEmailBtn: "ईमेल द्वारा आवेदन भेजें",
+      callChamberBtn: "चेम्बर कार्यालय में कॉल करें",
+      subjectNote: "विषय प्रारूप: [Application] पद का नाम - आपका पूरा नाम"
+    },
     testimonials: {
       eyebrow: "विश्वास का अनुभव",
       title: "मुवक्किलों के अनुभव",
@@ -636,6 +982,8 @@ export const translations = {
         { name: "अधिवक्ता परिचय", href: "#about" },
         { name: "प्रैक्टिस क्षेत्र", href: "#practice-areas" },
         { name: "सत्यापित प्रकरण", href: "#cases" },
+        { name: "विधिक दल", href: "#team" },
+        { name: "करियर व इंटर्नशिप", href: "#careers" },
         { name: "क्लाइंट अनुभव", href: "#testimonials" },
         { name: "प्रश्नोत्तर", href: "#faq" },
         { name: "कार्यालय व संपर्क", href: "#contact-info" }
