@@ -20,3 +20,11 @@ node_modules
 *.njsproj
 *.sln
 *.sw?
+
+# Resume & LaTeX build files
+*.aux
+*.out
+*.tex
+*.pdf
+test_micro*
+resume/

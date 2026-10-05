@@ -10,6 +10,7 @@ export const translations = {
       home: "Home",
       about: "About",
       practice: "Practice Areas",
+      docket: "Live Docket",
       cases: "Verified Cases",
       team: "Chamber Team",
       teamShort: "Team",
@@ -112,6 +113,57 @@ export const translations = {
           desc: "Thorough property title search reports, vetting of sale deeds, lease deeds, developer agreements, power of attorney, and statutory legal notices."
         }
       ]
+    },
+    latestDocket: {
+      eyebrow: "Live Court Docket & Real-Time Tracking • eCourts India Sync",
+      title: "Latest Court Matters & Active Docket",
+      subtitle: "Automated real-time tracking of active courtroom proceedings, evidence stages, pending hearings, and recent judicial decrees across Civil Court Thandla, Sessions Court Jhabua, and the High Court of Madhya Pradesh.",
+      syncBadge: "Live eCourts Sync Active",
+      lastSyncLabel: "Docket Status",
+      lastSyncPrefix: "Last Synced:",
+      syncButton: "Sync Latest Docket",
+      syncingText: "Connecting to eCourts Registry...",
+      syncedSuccess: "Docket Up-to-Date",
+      syncedCasesCount: "Active Matters Synced",
+      autoSyncNote: "Auto-synchronizes upon page load from eCourts & National Judicial Data Grid",
+      tabs: {
+        all: "All Docket Matters",
+        active: "⚡ Active Hearings & Trials",
+        disposed: "📜 Recent Decrees & Orders",
+        criminal: "⚖️ Criminal Defense & Bail",
+        civil: "🏛️ Civil & Property Suits"
+      },
+      searchPlaceholder: "Search active docket by case number, party, section, or court...",
+      stats: {
+        activeTrials: "Active Hearings / Trials",
+        documented: "Total Documented Matters",
+        recentFilings: "Recent 2023–2026 Filings",
+        disposedDecrees: "Disposed / Decrees Passed"
+      },
+      card: {
+        cnr: "CNR No",
+        copyCnr: "Copy CNR",
+        copied: "Copied!",
+        caseNo: "Case No",
+        courtBench: "Court Bench",
+        presidingJudge: "Presiding Judge",
+        category: "Matter Category",
+        stage: "Current Procedural Stage",
+        statutoryActs: "Statutory Acts & Sections",
+        counselRole: "Counsel Role",
+        filingDate: "Filing Date",
+        nextHearing: "Next Hearing",
+        verifyLive: "Verify Live on eCourts"
+      },
+      showing: "Showing",
+      ofTotal: "of",
+      docketMatters: "active matters in live docket",
+      noResults: "No docket records found matching your filter criteria.",
+      resetFilters: "Show All Active Matters",
+      njdgTitle: "Direct Cause List & Order Sheet Verification via eCourts",
+      njdgDesc: "Litigants and instructing solicitors can verify certified order sheets, cause lists, and daily proceedings directly using the unique 16-character CNR number on the official National Judicial Data Grid (NJDG).",
+      njdgButton: "Open National Judicial Data Grid (NJDG)",
+      viewFullArchiveBtn: "Explore Complete 350+ Case Archive"
     },
     cases: {
       eyebrow: "Official eCourts India Tracking • Public Judicial Record",
@@ -517,6 +569,7 @@ export const translations = {
       home: "होम",
       about: "परिचय",
       practice: "प्रैक्टिस क्षेत्र",
+      docket: "सक्रिय वाद-सूची",
       cases: "वास्तविक प्रकरण",
       team: "विधिक दल",
       teamShort: "दल",
@@ -619,6 +672,57 @@ export const translations = {
           desc: "संपत्ति की विधिक सर्च रिपोर्ट (Title Search), विक्रय पत्र (Sale Deed), लीज डीड, मुख्तारनामा (POA) और वैधानिक नोटिस का प्रारूपण।"
         }
       ]
+    },
+    latestDocket: {
+      eyebrow: "सक्रिय न्यायालयीन वाद-सूची • ई-कोर्ट्स भारत स्वचालित सिंक",
+      title: "हालिया न्यायालयीन वाद एवं सक्रिय वाद-सूची",
+      subtitle: "सिविल कोर्ट थांदला, जिला एवं सत्र न्यायालय झाबुआ, कुटुंब न्यायालय एवं मध्य प्रदेश उच्च न्यायालय में विचाराधीन सुनवाई, साक्ष्य, आरोप विरचन एवं हालिया न्यायिक निर्णयों का वास्तविक समय में स्वचालित विवरण।",
+      syncBadge: "सक्रिय ई-कोर्ट्स सिंक चालू",
+      lastSyncLabel: "वाद-सूची स्थिति",
+      lastSyncPrefix: "अंतिम सिंक:",
+      syncButton: "ताज़ा वाद सूची सिंक करें",
+      syncingText: "ई-कोर्ट्स रजिस्ट्री से जुड़ रहे हैं...",
+      syncedSuccess: "वाद-सूची पूर्णतः अद्यतन",
+      syncedCasesCount: "सक्रिय प्रकरण सिंक हुए",
+      autoSyncNote: "ई-कोर्ट्स एवं राष्ट्रीय न्यायिक डेटा ग्रिड (NJDG) से स्वतः अद्यतन",
+      tabs: {
+        all: "सभी सक्रिय वाद",
+        active: "⚡ प्रक्रियाधीन सुनवाई व ट्रायल",
+        disposed: "📜 हालिया आदेश व डिक्री",
+        criminal: "⚖️ दाण्डिक प्रतिरक्षा व जमानत",
+        civil: "🏛️ सिविल व भूमि वाद"
+      },
+      searchPlaceholder: "प्रकरण क्रमांक, पक्षकार, कानून की धारा या न्यायालय से खोजें...",
+      stats: {
+        activeTrials: "प्रक्रियाधीन सुनवाई / विचारण",
+        documented: "कुल दर्ज न्यायालयीन मामले",
+        recentFilings: "हालिया 2023–2026 पंजीयन",
+        disposedDecrees: "निस्तारित / पारित डिक्री"
+      },
+      card: {
+        cnr: "सीएनआर नंबर",
+        copyCnr: "सीएनआर कॉपी करें",
+        copied: "कॉपी हुआ!",
+        caseNo: "प्रकरण क्रमांक",
+        courtBench: "न्यायालय पीठ",
+        presidingJudge: "पीठासीन न्यायाधीश",
+        category: "प्रकरण श्रेणी",
+        stage: "वर्तमान विधिक स्तर",
+        statutoryActs: "लागू अधिनियम व धाराएं",
+        counselRole: "अधिवक्ता पक्ष",
+        filingDate: "पंजीयन दिनांक",
+        nextHearing: "आगामी सुनवाई",
+        verifyLive: "ई-कोर्ट्स पर लाइव देखें"
+      },
+      showing: "दर्शाए जा रहे हैं",
+      ofTotal: "कुल",
+      docketMatters: "सक्रिय वाद लाइव सूची में",
+      noResults: "आपकी खोज के अनुसार कोई सक्रिय वाद नहीं मिला।",
+      resetFilters: "सभी सक्रिय वाद देखें",
+      njdgTitle: "राष्ट्रीय न्यायिक डेटा ग्रिड (NJDG) एवं ई-कोर्ट्स सीधा सत्यापन",
+      njdgDesc: "मुवक्किल एवं पक्षकार अपने 16-अंकों के विशिष्ट सीएनआर नंबर के माध्यम से आधिकारिक राष्ट्रीय न्यायिक डेटा ग्रिड (NJDG) पर दैनिक कार्यसूची, प्रमाणित आदेश पत्रक एवं अग्रिम तारीख पेशी की पुष्टि सीधे कर सकते हैं।",
+      njdgButton: "आधिकारिक ई-कोर्ट्स सेवा पोर्टल खोलें",
+      viewFullArchiveBtn: "सम्पूर्ण 350+ प्रकरण अभिलेख नीचे देखें"
     },
     cases: {
       eyebrow: "ई-कोर्ट्स भारत आधिकारिक अभिलेख • सार्वजनिक न्यायिक रिकॉर्ड",

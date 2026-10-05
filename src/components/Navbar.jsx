@@ -13,7 +13,8 @@ import {
     MdPeople,
     MdWork,
     MdLocationOn,
-    MdInfoOutline
+    MdInfoOutline,
+    MdSchedule
 } from 'react-icons/md';
 import { useLanguage } from '../context/LanguageContext';
 import logoIcon from '../assets/logo-icon.png';
@@ -59,14 +60,15 @@ const Navbar = () => {
     const primaryNavLinks = [
         { name: t.nav.about, href: '#about' },
         { name: t.nav.practice, href: '#practice-areas' },
+        { name: t.nav.docket, href: '#latest-cases' },
         { name: t.nav.cases, href: '#cases' },
         { name: t.nav.team, href: '#team' },
-        { name: t.nav.careers, href: '#careers' },
         { name: t.nav.contact, href: '#contact-info' },
     ];
 
     // Secondary items inside the "More" dropdown
     const secondaryNavLinks = [
+        { name: t.nav.careersFull, href: '#careers', icon: <MdWork /> },
         { name: t.nav.testimonials, href: '#testimonials', icon: <MdFormatQuote /> },
         { name: t.nav.faq, href: '#faq', icon: <MdHelpOutline /> },
     ];
@@ -75,6 +77,7 @@ const Navbar = () => {
     const mobileNavLinks = [
         { name: t.nav.about, href: '#about', icon: <MdInfoOutline /> },
         { name: t.nav.practice, href: '#practice-areas', icon: <MdBalance /> },
+        { name: t.nav.docket, href: '#latest-cases', icon: <MdSchedule /> },
         { name: t.nav.cases, href: '#cases', icon: <MdGavel /> },
         { name: t.nav.team, href: '#team', icon: <MdPeople /> },
         { name: t.nav.careersFull, href: '#careers', icon: <MdWork /> },

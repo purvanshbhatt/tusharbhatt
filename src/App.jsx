@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import PracticeAreas from './components/PracticeAreas';
+import LatestCases from './components/LatestCases';
 import VerifiedCases from './components/VerifiedCases';
 import Team from './components/Team';
 import Careers from './components/Careers';
@@ -38,6 +39,7 @@ function MainApp() {
                     <Hero />
                     <About />
                     <PracticeAreas />
+                    <LatestCases />
                     <VerifiedCases />
                     <Team />
                     <Careers />

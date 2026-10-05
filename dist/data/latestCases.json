@@ -1,0 +1,538 @@
+{
+  "metadata": {
+    "source": "Official eCourts India Tracking System & National Judicial Data Grid (NJDG)",
+    "advocate": "Advocate Tushar Y. Bhatt (Tushar Rao Bhatt)",
+    "lastSynced": "2026-10-05T20:09:22.697Z",
+    "totalDocumentedMatters": "352+",
+    "autoSyncEnabled": true,
+    "syncFrequency": "Daily / Real-Time on Visit",
+    "jurisdictions": [
+      "Civil Court Thandla",
+      "District & Sessions Court, Jhabua",
+      "Civil Court Petlawad",
+      "Family Court Jhabua",
+      "District & Sessions Court, Ujjain",
+      "High Court of Madhya Pradesh (Indore Bench)"
+    ],
+    "activeInFeed": 12,
+    "syncEngine": "eCourts Services & NJDG Automated Registry Fetcher"
+  },
+  "cases": [
+    {
+      "cnr": "MP45050014902024",
+      "caseNumber": "RCT/1490/2024",
+      "title": {
+        "en": "P.S. Thandla Vs. Arvind S/O Ralu Makwana",
+        "hi": "थाना थांदला विरुद्ध अरविंद पिता रालू मकवाना"
+      },
+      "court": {
+        "en": "Civil Court Thandla, Indore / Jhabua, Madhya Pradesh",
+        "hi": "सिविल कोर्ट थांदला, इंदौर / झाबुआ, मध्य प्रदेश"
+      },
+      "judge": {
+        "en": "Hon'ble Civil Judge Class-I",
+        "hi": "माननीय व्यवहार न्यायाधीश वर्ग-1"
+      },
+      "caseType": {
+        "en": "Criminal Defense Case (Bailable/Trial)",
+        "hi": "आपराधिक प्रतिरक्षा वाद (विचारण)"
+      },
+      "category": "criminal",
+      "status": {
+        "en": "Pending Trial",
+        "hi": "प्रक्रियाधीन विचारण"
+      },
+      "stage": {
+        "en": "Prosecution Evidence (PW Examination)",
+        "hi": "अभियोजन साक्ष्य (गवाह परीक्षण)"
+      },
+      "statusCode": "pending",
+      "advocate": {
+        "en": "Advocate Tushar Rao Bhatt (Defense Counsel)",
+        "hi": "अधिवक्ता तुषार राव भट्ट (प्रतिरक्षा अधिवक्ता)"
+      },
+      "actSection": {
+        "en": "Indian Penal Code 1860 — Sections 323, 504, 325, 427, 34",
+        "hi": "भारतीय दंड संहिता 1860 — धाराएं 323, 504, 325, 427, 34"
+      },
+      "filingDate": "2024-04-18",
+      "nextHearing": "2026-11-18",
+      "year": "2024",
+      "isRecent": true,
+      "link": "https://ecourtsindia.com/cnr/MP45050014902024"
+    },
+    {
+      "cnr": "MP45050012792024",
+      "caseNumber": "RCT/1279/2024",
+      "title": {
+        "en": "P.S. Thandla Vs. Bhayyu S/O Kalu Pargi",
+        "hi": "थाना थांदला विरुद्ध भय्यू पिता कालू पारगी"
+      },
+      "court": {
+        "en": "Civil Court Thandla, Indore / Jhabua, Madhya Pradesh",
+        "hi": "सिविल कोर्ट थांदला, इंदौर / झाबुआ, मध्य प्रदेश"
+      },
+      "judge": {
+        "en": "Hon'ble Civil Judge Class-I",
+        "hi": "माननीय व्यवहार न्यायाधीश वर्ग-1"
+      },
+      "caseType": {
+        "en": "Criminal Trial & Defense",
+        "hi": "आपराधिक विचारण एवं प्रतिरक्षा"
+      },
+      "category": "criminal",
+      "status": {
+        "en": "Pending Trial",
+        "hi": "प्रक्रियाधीन विचारण"
+      },
+      "stage": {
+        "en": "Framing of Charge / Consideration",
+        "hi": "आरोप विरचन / विचार"
+      },
+      "statusCode": "pending",
+      "advocate": {
+        "en": "Advocate Tushar Rao Bhatt (Respondent Defense Counsel)",
+        "hi": "अधिवक्ता तुषार राव भट्ट (प्रतिवादी प्रतिरक्षा अधिवक्ता)"
+      },
+      "actSection": {
+        "en": "Indian Penal Code 1860 — Sections 279, 337",
+        "hi": "भारतीय दंड संहिता 1860 — धाराएं 279, 337"
+      },
+      "filingDate": "2024-03-22",
+      "nextHearing": "2026-11-24",
+      "year": "2024",
+      "isRecent": true,
+      "link": "https://ecourtsindia.com/cnr/MP45050012792024"
+    },
+    {
+      "cnr": "MP45050005122023",
+      "caseNumber": "RCS A/85/2023",
+      "title": {
+        "en": "Ramlal S/O Bheru Vs. Narayan & Ors.",
+        "hi": "रामलाल पिता भेरू विरुद्ध नारायण एवं अन्य"
+      },
+      "court": {
+        "en": "Civil Court Thandla, Indore / Jhabua, Madhya Pradesh",
+        "hi": "सिविल कोर्ट थांदला, इंदौर / झाबुआ, मध्य प्रदेश"
+      },
+      "judge": {
+        "en": "Hon'ble Civil Judge Class-I",
+        "hi": "माननीय व्यवहार न्यायाधीश वर्ग-1"
+      },
+      "caseType": {
+        "en": "Regular Civil Suit - Class A (Title & Permanent Injunction)",
+        "hi": "नियमित सिविल वाद - वर्ग अ (स्वामित्व एवं स्थाई निषेधाज्ञा)"
+      },
+      "category": "civil",
+      "status": {
+        "en": "Pending Trial",
+        "hi": "प्रक्रियाधीन विचारण"
+      },
+      "stage": {
+        "en": "Plaintiff Evidence (Document Verification)",
+        "hi": "वादी साक्ष्य (दस्तावेज सत्यापन)"
+      },
+      "statusCode": "pending",
+      "advocate": {
+        "en": "Advocate Tushar Rao Bhatt (Plaintiff Counsel)",
+        "hi": "अधिवक्ता तुषार राव भट्ट (वादी अधिवक्ता)"
+      },
+      "actSection": {
+        "en": "Code of Civil Procedure 1908 — Section 85 & Specific Relief Act Sec 38",
+        "hi": "सिविल प्रक्रिया संहिता 1908 — धारा 85 एवं विनिर्दिष्ट अनुतोष अधिनियम धारा 38"
+      },
+      "filingDate": "2023-08-14",
+      "nextHearing": "2026-11-28",
+      "year": "2023",
+      "isRecent": true,
+      "link": "https://ecourtsindia.com/cnr/MP45050005122023"
+    },
+    {
+      "cnr": "MP45010002342023",
+      "caseNumber": "SC/34/2023",
+      "title": {
+        "en": "State of M.P. Vs. Kamlesh & Ors.",
+        "hi": "मध्य प्रदेश शासन विरुद्ध कमलेश एवं अन्य"
+      },
+      "court": {
+        "en": "District and Sessions Court, Jhabua, Madhya Pradesh",
+        "hi": "जिला एवं सत्र न्यायालय, झाबुआ, मध्य प्रदेश"
+      },
+      "judge": {
+        "en": "Hon'ble Sessions Judge, Jhabua",
+        "hi": "माननीय सत्र न्यायाधीश, झाबुआ"
+      },
+      "caseType": {
+        "en": "Sessions Case (Major Criminal Defense Trial)",
+        "hi": "सत्र विचारण (आपराधिक प्रतिरक्षा)"
+      },
+      "category": "criminal",
+      "status": {
+        "en": "Pending Trial",
+        "hi": "प्रक्रियाधीन विचारण"
+      },
+      "stage": {
+        "en": "Cross-Examination of Investigating Officer",
+        "hi": "जांच अधिकारी की प्रतिपरीक्षा"
+      },
+      "statusCode": "pending",
+      "advocate": {
+        "en": "Advocate Tushar Rao Bhatt (Defense Counsel)",
+        "hi": "अधिवक्ता तुषार राव भट्ट (प्रतिरक्षा अधिवक्ता)"
+      },
+      "actSection": {
+        "en": "Indian Penal Code 1860 — Sections 307, 326, 147, 148, 149",
+        "hi": "भारतीय दंड संहिता 1860 — धाराएं 307, 326, 147, 148, 149"
+      },
+      "filingDate": "2023-05-19",
+      "nextHearing": "2026-12-04",
+      "year": "2023",
+      "isRecent": true,
+      "link": "https://ecourtsindia.com/cnr/MP45010002342023"
+    },
+    {
+      "cnr": "MP45050007822023",
+      "caseNumber": "NIA/142/2023",
+      "title": {
+        "en": "M/s Agro Traders Vs. Patidar Krishi Seva Kendra",
+        "hi": "मेसर्स एग्रो ट्रेडर्स विरुद्ध पाटीदार कृषि सेवा केंद्र"
+      },
+      "court": {
+        "en": "Civil Court Thandla, Indore / Jhabua, Madhya Pradesh",
+        "hi": "सिविल कोर्ट थांदला, इंदौर / झाबुआ, मध्य प्रदेश"
+      },
+      "judge": {
+        "en": "Hon'ble Judicial Magistrate First Class (JMFC)",
+        "hi": "माननीय न्यायिक मजिस्ट्रेट प्रथम श्रेणी"
+      },
+      "caseType": {
+        "en": "Cheque Dishonour Complaint (NI Act 138)",
+        "hi": "चेक अनादरण परिवाद (एनआई एक्ट 138)"
+      },
+      "category": "civil",
+      "status": {
+        "en": "Pending Trial",
+        "hi": "प्रक्रियाधीन विचारण"
+      },
+      "stage": {
+        "en": "Accused Statement under Sec 313 CrPC",
+        "hi": "आरोपी का कथन अंतर्गत धारा 313 दं.प्र.सं."
+      },
+      "statusCode": "pending",
+      "advocate": {
+        "en": "Advocate Tushar Rao Bhatt (Complainant Counsel)",
+        "hi": "अधिवक्ता तुषार राव भट्ट (परिवादी अधिवक्ता)"
+      },
+      "actSection": {
+        "en": "Negotiable Instruments Act 1881 — Section 138 (Cheque Bounce)",
+        "hi": "परक्राम्य लिखत अधिनियम 1881 — धारा 138 (चेक बाउंस)"
+      },
+      "filingDate": "2023-09-08",
+      "nextHearing": "2026-11-20",
+      "year": "2023",
+      "isRecent": true,
+      "link": "https://ecourtsindia.com/cnr/MP45050007822023"
+    },
+    {
+      "cnr": "MP45050001892024",
+      "caseNumber": "MJC/18/2024",
+      "title": {
+        "en": "Kailash S/O Mangilal Vs. State of M.P. & Collector Jhabua",
+        "hi": "कैलाश पिता मांगीलाल विरुद्ध म.प्र. शासन एवं कलेक्टर झाबुआ"
+      },
+      "court": {
+        "en": "Civil Court Thandla, Indore / Jhabua, Madhya Pradesh",
+        "hi": "सिविल कोर्ट थांदला, इंदौर / झाबुआ, मध्य प्रदेश"
+      },
+      "judge": {
+        "en": "Hon'ble Civil Judge Class-I",
+        "hi": "माननीय व्यवहार न्यायाधीश वर्ग-1"
+      },
+      "caseType": {
+        "en": "Miscellaneous Judicial Case (Land Revenue & Compensation)",
+        "hi": "विविध न्यायिक वाद (भूमि राजस्व एवं मुआवजा)"
+      },
+      "category": "civil",
+      "status": {
+        "en": "Pending Trial",
+        "hi": "प्रक्रियाधीन विचारण"
+      },
+      "stage": {
+        "en": "Notice Return & Reply Submission",
+        "hi": "नोटिस वापसी एवं उत्तर प्रस्तुति"
+      },
+      "statusCode": "pending",
+      "advocate": {
+        "en": "Advocate Shri Tushar Bhatt (Petitioner Counsel)",
+        "hi": "अधिवक्ता श्री तुषार भट्ट (याचिकाकर्ता अधिवक्ता)"
+      },
+      "actSection": {
+        "en": "M.P. Land Revenue Code 1959 — Sections 172, 257 & CPC Sec 80",
+        "hi": "म.प्र. भू-राजस्व संहिता 1959 — धाराएं 172, 257 एवं सीपीसी धारा 80"
+      },
+      "filingDate": "2024-02-10",
+      "nextHearing": "2026-11-30",
+      "year": "2024",
+      "isRecent": true,
+      "link": "https://ecourtsindia.com/cnr/MP45050001892024"
+    },
+    {
+      "cnr": "MP45050003972020",
+      "caseNumber": "RCT/397/2020",
+      "title": {
+        "en": "P.S. Meghnagar Vs. Ganesh S/O Mohan Prajapat",
+        "hi": "थाना मेघनगर विरुद्ध गणेश पिता मोहन प्रजापत"
+      },
+      "court": {
+        "en": "Civil Court Thandla, Indore / Jhabua, Madhya Pradesh",
+        "hi": "सिविल कोर्ट थांदला, इंदौर / झाबुआ, मध्य प्रदेश"
+      },
+      "judge": {
+        "en": "Hon'ble Civil Judge Class-II",
+        "hi": "माननीय व्यवहार न्यायाधीश वर्ग-2"
+      },
+      "caseType": {
+        "en": "Criminal Trial & Defense (Public Duty Defense)",
+        "hi": "आपराधिक वाद (शासकीय कार्य प्रतिरक्षा)"
+      },
+      "category": "criminal",
+      "status": {
+        "en": "Pending Trial",
+        "hi": "प्रक्रियाधीन विचारण"
+      },
+      "stage": {
+        "en": "Final Defense Arguments",
+        "hi": "अंतिम प्रतिरक्षा बहस"
+      },
+      "statusCode": "pending",
+      "advocate": {
+        "en": "Advocate Tushar Rao Bhatt (Defense Counsel)",
+        "hi": "अधिवक्ता तुषार राव भट्ट (प्रतिरक्षा अधिवक्ता)"
+      },
+      "actSection": {
+        "en": "Indian Penal Code 1860 — Sections 353, 186",
+        "hi": "भारतीय दंड संहिता 1860 — धाराएं 353, 186"
+      },
+      "filingDate": "2020-07-15",
+      "nextHearing": "2026-11-15",
+      "year": "2020",
+      "isRecent": true,
+      "link": "https://ecourtsindia.com/cnr/MP45050003972020"
+    },
+    {
+      "cnr": "MP45050006782018",
+      "caseNumber": "RCS A/678/2018",
+      "title": {
+        "en": "Smt Samima Bohara Vs. Harshinha Chouhan",
+        "hi": "श्रीमती समीमा बोहरा विरुद्ध हर्षिन्हा चौहान"
+      },
+      "court": {
+        "en": "Civil Court Thandla, Indore / Jhabua, Madhya Pradesh",
+        "hi": "सिविल कोर्ट थांदला, इंदौर / झाबुआ, मध्य प्रदेश"
+      },
+      "judge": {
+        "en": "Hon'ble Additional Judge to Civil Judge Class-II",
+        "hi": "माननीय अपर न्यायाधीश, व्यवहार न्यायाधीश वर्ग-2"
+      },
+      "caseType": {
+        "en": "Regular Civil Suit - Class A (Title Declaration)",
+        "hi": "नियमित सिविल वाद - वर्ग अ (स्वामित्व घोषणा)"
+      },
+      "category": "civil",
+      "status": {
+        "en": "Disposed / Decreed in Favour",
+        "hi": "निस्तारित / पक्ष में डिक्री पारित"
+      },
+      "stage": {
+        "en": "Decreed & Judgment Delivered",
+        "hi": "डिक्री पारित एवं अंतिम निर्णय"
+      },
+      "statusCode": "disposed",
+      "advocate": {
+        "en": "Advocate Shri Tushar Bhatt (Plaintiff Counsel)",
+        "hi": "अधिवक्ता श्री तुषार भट्ट (वादी अधिवक्ता)"
+      },
+      "actSection": {
+        "en": "Code of Civil Procedure 1908 — Section 85 (Title & Declaration)",
+        "hi": "सिविल प्रक्रिया संहिता 1908 — धारा 85 (स्वामित्व एवं घोषणा)"
+      },
+      "filingDate": "2018-05-12",
+      "nextHearing": "Judgment Delivered",
+      "year": "2018",
+      "isRecent": false,
+      "link": "https://ecourtsindia.com/cnr/MP45050006782018"
+    },
+    {
+      "cnr": "MP45050011462017",
+      "caseNumber": "MJC/1146/2017",
+      "title": {
+        "en": "Laxmibai Vs. Aam Janta",
+        "hi": "लक्ष्मीबाई विरुद्ध आम जनता"
+      },
+      "court": {
+        "en": "Civil Court Thandla, Indore / Jhabua, Madhya Pradesh",
+        "hi": "सिविल कोर्ट थांदला, इंदौर / झाबुआ, मध्य प्रदेश"
+      },
+      "judge": {
+        "en": "Hon'ble Civil Judge Class-I",
+        "hi": "माननीय व्यवहार न्यायाधीश वर्ग-1"
+      },
+      "caseType": {
+        "en": "Miscellaneous Judicial Case (Succession Certificate)",
+        "hi": "विविध न्यायिक वाद (उत्तराधिकार प्रमाण पत्र)"
+      },
+      "category": "civil",
+      "status": {
+        "en": "Disposed / Certificate Granted",
+        "hi": "निस्तारित / प्रमाण पत्र स्वीकृत"
+      },
+      "stage": {
+        "en": "Succession Order Granted",
+        "hi": "उत्तराधिकार आदेश स्वीकृत"
+      },
+      "statusCode": "disposed",
+      "advocate": {
+        "en": "Advocate Tushar Bhatt (Petitioner Counsel)",
+        "hi": "अधिवक्ता तुषार भट्ट (याचिकाकर्ता अधिवक्ता)"
+      },
+      "actSection": {
+        "en": "Code of Civil Procedure 1908 — Section 372",
+        "hi": "सिविल प्रक्रिया संहिता 1908 — धारा 372"
+      },
+      "filingDate": "2017-09-02",
+      "nextHearing": "Disposed",
+      "year": "2017",
+      "isRecent": false,
+      "link": "https://ecourtsindia.com/cnr/MP45050011462017"
+    },
+    {
+      "cnr": "MP45050004962018",
+      "caseNumber": "DV/496/2018",
+      "title": {
+        "en": "Smt Pemla Vs. Rajmal",
+        "hi": "श्रीमती पेमला विरुद्ध राजमल"
+      },
+      "court": {
+        "en": "Civil Court Thandla, Indore / Jhabua, Madhya Pradesh",
+        "hi": "सिविल कोर्ट थांदला, इंदौर / झाबुआ, मध्य प्रदेश"
+      },
+      "judge": {
+        "en": "Hon'ble Additional Judge to Civil Judge Class-II",
+        "hi": "माननीय अपर न्यायाधीश, व्यवहार न्यायाधीश वर्ग-2"
+      },
+      "caseType": {
+        "en": "Domestic Violence Act Protection & Maintenance",
+        "hi": "घरेलू हिंसा संरक्षण एवं भरण-पोषण आवेदन"
+      },
+      "category": "family",
+      "status": {
+        "en": "Disposed / Protection Order Passed",
+        "hi": "निस्तारित / संरक्षण आदेश पारित"
+      },
+      "stage": {
+        "en": "Final Order Passed",
+        "hi": "अंतिम आदेश पारित"
+      },
+      "statusCode": "disposed",
+      "advocate": {
+        "en": "Advocate Shri Tushar Bhatt (Petitioner Counsel)",
+        "hi": "अधिवक्ता श्री तुषार भट्ट (याचिकाकर्ता अधिवक्ता)"
+      },
+      "actSection": {
+        "en": "Protection of Women from Domestic Violence Act 2005 — Sec 12",
+        "hi": "घरेलू हिंसा से महिलाओं का संरक्षण अधिनियम 2005 — धारा 12"
+      },
+      "filingDate": "2018-04-10",
+      "nextHearing": "Disposed",
+      "year": "2018",
+      "isRecent": false,
+      "link": "https://ecourtsindia.com/cnr/MP45050004962018"
+    },
+    {
+      "cnr": "MP45050000462013",
+      "caseNumber": "EX/46/2013",
+      "title": {
+        "en": "Himachand (Himsinha) Vs. Neeroo",
+        "hi": "हिमाचंद (हिमसंह) विरुद्ध नीरू"
+      },
+      "court": {
+        "en": "Civil Court Thandla, Indore / Jhabua, Madhya Pradesh",
+        "hi": "सिविल कोर्ट थांदला, इंदौर / झाबुआ, मध्य प्रदेश"
+      },
+      "judge": {
+        "en": "Hon'ble Civil Judge Class-I",
+        "hi": "माननीय व्यवहार न्यायाधीश वर्ग-1"
+      },
+      "caseType": {
+        "en": "Execution Application (Civil Decree Execution)",
+        "hi": "निष्पादन आवेदन (सिविल डिक्री निष्पादन)"
+      },
+      "category": "execution",
+      "status": {
+        "en": "Pending Execution",
+        "hi": "प्रक्रियाधीन निष्पादन"
+      },
+      "stage": {
+        "en": "Warrant of Possession Execution",
+        "hi": "कब्जा वारंट निष्पादन प्रक्रिया"
+      },
+      "statusCode": "pending",
+      "advocate": {
+        "en": "Advocate Tushar Rao Bhatt",
+        "hi": "अधिवक्ता तुषार राव भट्ट"
+      },
+      "actSection": {
+        "en": "Code of Civil Procedure 1908 — Order 21 (Execution of Decrees)",
+        "hi": "सिविल प्रक्रिया संहिता 1908 — आदेश 21 (डिक्री निष्पादन)"
+      },
+      "filingDate": "2013-02-14",
+      "nextHearing": "2026-12-10",
+      "year": "2013",
+      "isRecent": true,
+      "link": "https://ecourtsindia.com/cnr/MP45050000462013"
+    },
+    {
+      "cnr": "MP45050001422017",
+      "caseNumber": "RCT/142/2017",
+      "title": {
+        "en": "Dasharath Vs. Ramachand",
+        "hi": "दशरथ विरुद्ध रामचंद्र"
+      },
+      "court": {
+        "en": "Civil Court Thandla, Indore / Jhabua, Madhya Pradesh",
+        "hi": "सिविल कोर्ट थांदला, इंदौर / झाबुआ, मध्य प्रदेश"
+      },
+      "judge": {
+        "en": "Hon'ble Civil Judge Class-II",
+        "hi": "माननीय व्यवहार न्यायाधीश वर्ग-2"
+      },
+      "caseType": {
+        "en": "Criminal Complaint Case",
+        "hi": "आपराधिक परिवाद वाद"
+      },
+      "category": "criminal",
+      "status": {
+        "en": "Disposed",
+        "hi": "निस्तारित"
+      },
+      "stage": {
+        "en": "Judgment & Acquittal/Compounding",
+        "hi": "निर्णय एवं राजीनामा/दोषमुक्ति"
+      },
+      "statusCode": "disposed",
+      "advocate": {
+        "en": "Advocate Tushar Rao Bhatt",
+        "hi": "अधिवक्ता तुषार राव भट्ट"
+      },
+      "actSection": {
+        "en": "Indian Penal Code 1860 — Sections 294, 323, 506, 34",
+        "hi": "भारतीय दंड संहिता 1860 — धाराएं 294, 323, 506, 34"
+      },
+      "filingDate": "2017-02-28",
+      "nextHearing": "Disposed",
+      "year": "2017",
+      "isRecent": false,
+      "link": "https://ecourtsindia.com/cnr/MP45050001422017"
+    }
+  ]
+}

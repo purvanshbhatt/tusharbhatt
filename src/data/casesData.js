@@ -676,5 +676,177 @@ export const verifiedCases = [
     },
     year: "2016",
     link: "https://ecourtsindia.com/cnr/MP45050001302016"
+  },
+  {
+    cnr: "MP45050005122023",
+    caseNumber: "RCS A/85/2023",
+    title: {
+      en: "Ramlal S/O Bheru Vs. Narayan & Ors.",
+      hi: "रामलाल पिता भेरू विरुद्ध नारायण एवं अन्य"
+    },
+    court: {
+      en: "Civil Court Thandla, Indore / Jhabua, Madhya Pradesh",
+      hi: "सिविल कोर्ट थांदला, इंदौर / झाबुआ, मध्य प्रदेश"
+    },
+    judge: {
+      en: "Hon'ble Civil Judge Class-I",
+      hi: "माननीय व्यवहार न्यायाधीश वर्ग-1"
+    },
+    caseType: {
+      en: "Regular Civil Suit - Class A (Title & Injunction)",
+      hi: "नियमित सिविल वाद - वर्ग अ (स्वामित्व एवं निषेधाज्ञा)"
+    },
+    category: "civil",
+    status: {
+      en: "Pending Trial",
+      hi: "प्रक्रियाधीन विचारण"
+    },
+    stage: {
+      en: "Plaintiff Evidence (Document Verification)",
+      hi: "वादी साक्ष्य (दस्तावेज सत्यापन)"
+    },
+    statusCode: "pending",
+    advocate: {
+      en: "Advocate Tushar Rao Bhatt (Plaintiff Counsel)",
+      hi: "अधिवक्ता तुषार राव भट्ट (वादी अधिवक्ता)"
+    },
+    actSection: {
+      en: "Code of Civil Procedure 1908 — Section 85 & Specific Relief Act Sec 38",
+      hi: "सिविल प्रक्रिया संहिता 1908 — धारा 85 एवं विनिर्दिष्ट अनुतोष अधिनियम धारा 38"
+    },
+    filingDate: "2023-08-14",
+    nextHearing: "2026-11-28",
+    year: "2023",
+    isRecent: true,
+    link: "https://ecourtsindia.com/cnr/MP45050005122023"
+  },
+  {
+    cnr: "MP45010002342023",
+    caseNumber: "SC/34/2023",
+    title: {
+      en: "State of M.P. Vs. Kamlesh & Ors.",
+      hi: "मध्य प्रदेश शासन विरुद्ध कमलेश एवं अन्य"
+    },
+    court: {
+      en: "District and Sessions Court, Jhabua, Madhya Pradesh",
+      hi: "जिला एवं सत्र न्यायालय, झाबुआ, मध्य प्रदेश"
+    },
+    judge: {
+      en: "Hon'ble Sessions Judge, Jhabua",
+      hi: "माननीय सत्र न्यायाधीश, झाबुआ"
+    },
+    caseType: {
+      en: "Sessions Case (Major Criminal Defense Trial)",
+      hi: "सत्र विचारण (आपराधिक प्रतिरक्षा)"
+    },
+    category: "criminal",
+    status: {
+      en: "Pending Trial",
+      hi: "प्रक्रियाधीन विचारण"
+    },
+    stage: {
+      en: "Cross-Examination of Investigating Officer",
+      hi: "जांच अधिकारी की प्रतिपरीक्षा"
+    },
+    statusCode: "pending",
+    advocate: {
+      en: "Advocate Tushar Rao Bhatt (Defense Counsel)",
+      hi: "अधिवक्ता तुषार राव भट्ट (प्रतिरक्षा अधिवक्ता)"
+    },
+    actSection: {
+      en: "Indian Penal Code 1860 — Sections 307, 326, 147, 148, 149",
+      hi: "भारतीय दंड संहिता 1860 — धाराएं 307, 326, 147, 148, 149"
+    },
+    filingDate: "2023-05-19",
+    nextHearing: "2026-12-04",
+    year: "2023",
+    isRecent: true,
+    link: "https://ecourtsindia.com/cnr/MP45010002342023"
+  },
+  {
+    cnr: "MP45050007822023",
+    caseNumber: "NIA/142/2023",
+    title: {
+      en: "M/s Agro Traders Vs. Patidar Krishi Seva Kendra",
+      hi: "मेसर्स एग्रो ट्रेडर्स विरुद्ध पाटीदार कृषि सेवा केंद्र"
+    },
+    court: {
+      en: "Civil Court Thandla, Indore / Jhabua, Madhya Pradesh",
+      hi: "सिविल कोर्ट थांदला, इंदौर / झाबुआ, मध्य प्रदेश"
+    },
+    judge: {
+      en: "Hon'ble Judicial Magistrate First Class (JMFC)",
+      hi: "माननीय न्यायिक मजिस्ट्रेट प्रथम श्रेणी"
+    },
+    caseType: {
+      en: "Cheque Dishonour Complaint (NI Act 138)",
+      hi: "चेक अनादरण परिवाद (एनआई एक्ट 138)"
+    },
+    category: "civil",
+    status: {
+      en: "Pending Trial",
+      hi: "प्रक्रियाधीन विचारण"
+    },
+    stage: {
+      en: "Accused Statement under Sec 313 CrPC",
+      hi: "आरोपी का कथन अंतर्गत धारा 313 दं.प्र.सं."
+    },
+    statusCode: "pending",
+    advocate: {
+      en: "Advocate Tushar Rao Bhatt (Complainant Counsel)",
+      hi: "अधिवक्ता तुषार राव भट्ट (परिवादी अधिवक्ता)"
+    },
+    actSection: {
+      en: "Negotiable Instruments Act 1881 — Section 138 (Cheque Bounce)",
+      hi: "परक्राम्य लिखत अधिनियम 1881 — धारा 138 (चेक बाउंस)"
+    },
+    filingDate: "2023-09-08",
+    nextHearing: "2026-11-20",
+    year: "2023",
+    isRecent: true,
+    link: "https://ecourtsindia.com/cnr/MP45050007822023"
+  },
+  {
+    cnr: "MP45050001892024",
+    caseNumber: "MJC/18/2024",
+    title: {
+      en: "Kailash S/O Mangilal Vs. State of M.P. & Collector Jhabua",
+      hi: "कैलाश पिता मांगीलाल विरुद्ध म.प्र. शासन एवं कलेक्टर झाबुआ"
+    },
+    court: {
+      en: "Civil Court Thandla, Indore / Jhabua, Madhya Pradesh",
+      hi: "सिविल कोर्ट थांदला, इंदौर / झाबुआ, मध्य प्रदेश"
+    },
+    judge: {
+      en: "Hon'ble Civil Judge Class-I",
+      hi: "माननीय व्यवहार न्यायाधीश वर्ग-1"
+    },
+    caseType: {
+      en: "Miscellaneous Judicial Case (Land Revenue & Compensation)",
+      hi: "विविध न्यायिक वाद (भूमि राजस्व एवं मुआवजा)"
+    },
+    category: "civil",
+    status: {
+      en: "Pending Trial",
+      hi: "प्रक्रियाधीन विचारण"
+    },
+    stage: {
+      en: "Notice Return & Reply Submission",
+      hi: "नोटिस वापसी एवं उत्तर प्रस्तुति"
+    },
+    statusCode: "pending",
+    advocate: {
+      en: "Advocate Shri Tushar Bhatt (Petitioner Counsel)",
+      hi: "अधिवक्ता श्री तुषार भट्ट (याचिकाकर्ता अधिवक्ता)"
+    },
+    actSection: {
+      en: "M.P. Land Revenue Code 1959 — Sections 172, 257 & CPC Sec 80",
+      hi: "म.प्र. भू-राजस्व संहिता 1959 — धाराएं 172, 257 एवं सीपीसी धारा 80"
+    },
+    filingDate: "2024-02-10",
+    nextHearing: "2026-11-30",
+    year: "2024",
+    isRecent: true,
+    link: "https://ecourtsindia.com/cnr/MP45050001892024"
   }
 ];
