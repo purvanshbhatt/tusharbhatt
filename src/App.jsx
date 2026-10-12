@@ -16,6 +16,7 @@ import Footer from './components/Footer';
 import ScrollProgressBar from './components/ScrollProgressBar';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
+import LegalGuides from './components/LegalGuides';
 import FloatingContactButton from './components/FloatingContactButton';
 
 function MainApp() {
@@ -41,6 +42,7 @@ function MainApp() {
                     <PracticeAreas />
                     <LatestCases />
                     <VerifiedCases />
+                    <LegalGuides />
                     <Team />
                     <Careers />
                     <Contact />

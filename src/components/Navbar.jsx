@@ -14,7 +14,8 @@ import {
     MdWork,
     MdLocationOn,
     MdInfoOutline,
-    MdSchedule
+    MdSchedule,
+    MdMenuBook
 } from 'react-icons/md';
 import { useLanguage } from '../context/LanguageContext';
 import logoIcon from '../assets/logo-icon.png';
@@ -68,6 +69,7 @@ const Navbar = () => {
 
     // Secondary items inside the "More" dropdown
     const secondaryNavLinks = [
+        { name: t.nav.legalGuides || "Legal Guides", href: '#legal-guides', icon: <MdMenuBook /> },
         { name: t.nav.careersFull, href: '#careers', icon: <MdWork /> },
         { name: t.nav.testimonials, href: '#testimonials', icon: <MdFormatQuote /> },
         { name: t.nav.faq, href: '#faq', icon: <MdHelpOutline /> },
@@ -79,6 +81,7 @@ const Navbar = () => {
         { name: t.nav.practice, href: '#practice-areas', icon: <MdBalance /> },
         { name: t.nav.docket, href: '#latest-cases', icon: <MdSchedule /> },
         { name: t.nav.cases, href: '#cases', icon: <MdGavel /> },
+        { name: t.nav.legalGuides || "Legal Guides", href: '#legal-guides', icon: <MdMenuBook /> },
         { name: t.nav.team, href: '#team', icon: <MdPeople /> },
         { name: t.nav.careersFull, href: '#careers', icon: <MdWork /> },
         { name: t.nav.testimonials, href: '#testimonials', icon: <MdFormatQuote /> },
