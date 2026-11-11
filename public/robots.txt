@@ -1,0 +1,27 @@
+# Robots.txt for tusharbhattchambers.com
+# Advocate Tushar Y. Bhatt Chambers
+
+User-agent: *
+Allow: /
+
+# AI Search & Discovery Crawlers
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap Location
+Sitemap: https://tusharbhattchambers.com/sitemap.xml

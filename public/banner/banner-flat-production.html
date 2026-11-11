@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advocate Tushar Y. Bhatt — Physical Banner Print Artwork</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Rozha+One&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Standard 8ft x 3ft aspect ratio (8:3) canvas - 3200px x 1200px */
+    .banner-canvas {
+      width: 3200px;
+      height: 1200px;
+      background: radial-gradient(circle at 50% 30%, #0d2653 0%, #0a1c3d 45%, #050e21 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 50px 70px 45px;
+      box-shadow: 0 0 80px rgba(0,0,0,0.9);
+      border: 4px solid #aa7c19;
+    }
+
+    /* Outer Double Gold Border & Inset */
+    .outer-border {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      right: 25px;
+      bottom: 25px;
+      border: 3px solid #d4af37;
+      pointer-events: none;
+    }
+    .inner-border {
+      position: absolute;
+      top: 35px;
+      left: 35px;
+      right: 35px;
+      bottom: 35px;
+      border: 1.5px solid rgba(212, 175, 55, 0.4);
+      pointer-events: none;
+    }
+
+    /* Eyelet / Grommet punching markers for flex banner printing */
+    .grommet {
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 2px dashed #d4af37;
+      background: rgba(0,0,0,0.5);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .grommet::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #d4af37;
+    }
+    .g-top-left { top: 10px; left: 10px; }
+    .g-top-right { top: 10px; right: 10px; }
+    .g-bottom-left { bottom: 10px; left: 10px; }
+    .g-bottom-right { bottom: 10px; right: 10px; }
+    .g-top-mid { top: 10px; left: 50%; transform: translateX(-50%); }
+    .g-bot-mid { bottom: 10px; left: 50%; transform: translateX(-50%); }
+
+    /* Top Strip: Judicial Court Jurisdiction */
+    .top-strip {
+      background: linear-gradient(90deg, rgba(212,175,55,0.05) 0%, rgba(212,175,55,0.2) 50%, rgba(212,175,55,0.05) 100%);
+      border-top: 1px solid #d4af37;
+      border-bottom: 1px solid #d4af37;
+      padding: 12px 20px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 5px;
+      color: #fdf1c8;
+      text-transform: uppercase;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+    }
+
+    /* Main Center Section */
+    .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 20px;
+      gap: 40px;
+    }
+
+    /* Left Emblem: Gold Medallion */
+    .emblem-badge {
+      width: 230px;
+      height: 230px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      border: 4px solid #d4af37;
+      box-shadow: 0 0 30px rgba(212,175,55,0.3), inset 0 0 20px rgba(0,0,0,0.8);
+      background: radial-gradient(circle, #0e2752 0%, #071733 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .emblem-badge svg {
+      width: 110px;
+      height: 110px;
+      fill: #d4af37;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.6));
+    }
+    .badge-sub {
+      margin-top: 8px;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: #fdf1c8;
+      text-transform: uppercase;
+    }
+    .badge-year {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #cf9f38;
+    }
+
+    /* Center Identity Content */
+    .identity-block {
+      flex: 1;
+      text-align: center;
+    }
+    .hindi-salutation {
+      font-family: 'Tiro Devanagari Hindi', 'Plus Jakarta Sans', serif;
+      font-size: 34px;
+      color: #d4af37;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    }
+    .primary-name {
+      font-family: 'Cinzel', serif;
+      font-size: 96px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      line-height: 1.05;
+      background: linear-gradient(135deg, #fdf1c8 0%, #d4af37 40%, #ffffff 50%, #d4af37 60%, #9a6e12 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 6px 12px rgba(0,0,0,0.8));
+    }
+    .hindi-name {
+      font-family: 'Tiro Devanagari Hindi', 'Plus Jakarta Sans', sans-serif;
+      font-size: 44px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-top: 6px;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+    }
+    .hindi-name span {
+      color: #cf9f38;
+      font-size: 36px;
+    }
+    .credentials-strip {
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(255,255,255,0.06);
+      border: 1.5px solid rgba(212, 175, 55, 0.5);
+      border-radius: 8px;
+      padding: 10px 30px;
+      margin-top: 15px;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: #fdf1c8;
+      text-transform: uppercase;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    .credentials-strip .dot {
+      color: #d4af37;
+    }
+
+    /* Right Seal: Bar Council Registration */
+    .bar-seal {
+      width: 230px;
+      height: 230px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      border: 4px solid #d4af37;
+      box-shadow: 0 0 30px rgba(212,175,55,0.3), inset 0 0 20px rgba(0,0,0,0.8);
+      background: radial-gradient(circle, #0e2752 0%, #071733 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .bar-seal-text-top {
+      font-family: 'Cinzel', serif;
+      font-size: 16px;
+      font-weight: 800;
+      color: #cf9f38;
+      letter-spacing: 1.5px;
+    }
+    .bar-seal-title {
+      font-family: 'Cinzel', serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: #ffffff;
+      margin: 4px 0;
+    }
+    .bar-divider {
+      width: 80%;
+      height: 2px;
+      background: #d4af37;
+      margin: 6px 0;
+    }
+    .bar-seal-status {
+      font-size: 16px;
+      font-weight: 800;
+      color: #fdf1c8;
+      letter-spacing: 1px;
+    }
+    .bar-seal-stat {
+      font-size: 14px;
+      font-weight: 700;
+      color: #a4b4cb;
+      margin-top: 4px;
+    }
+
+    /* Practice Areas Cards Bar */
+    .practice-section {
+      margin-top: 10px;
+    }
+    .practice-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 18px;
+    }
+    .practice-item {
+      background: linear-gradient(180deg, #102954 0%, #0a1b38 100%);
+      border: 1.5px solid rgba(212,175,55,0.5);
+      border-radius: 8px;
+      padding: 14px 18px;
+      text-align: center;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.5);
+    }
+    .practice-item .en {
+      font-size: 22px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+    }
+    .practice-item .hi {
+      font-family: 'Tiro Devanagari Hindi', 'Plus Jakarta Sans', sans-serif;
+      font-size: 17px;
+      color: #cf9f38;
+      margin-top: 4px;
+      font-weight: 600;
+    }
+
+    /* Bottom Chambers & Contact Footer */
+    .footer-bar {
+      background: #050f24;
+      border: 2px solid #d4af37;
+      border-radius: 12px;
+      padding: 22px 35px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    }
+    .chamber-col {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .col-title {
+      font-family: 'Cinzel', serif;
+      font-size: 19px;
+      font-weight: 900;
+      color: #cf9f38;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .col-address {
+      font-size: 19px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.35;
+    }
+    .col-hindi {
+      font-family: 'Tiro Devanagari Hindi', 'Plus Jakarta Sans', sans-serif;
+      font-size: 16px;
+      color: #a4b4cb;
+    }
+    .col-timings {
+      font-size: 15px;
+      font-weight: 700;
+      color: #d4af37;
+      margin-top: 3px;
+    }
+
+    /* Helpline Callout */
+    .helpline-box {
+      background: linear-gradient(135deg, #133266 0%, #0d2247 100%);
+      border: 2px solid #d4af37;
+      border-radius: 10px;
+      padding: 16px 20px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    }
+    .helpline-label {
+      font-family: 'Cinzel', serif;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 2.5px;
+      color: #cf9f38;
+      text-transform: uppercase;
+    }
+    .helpline-number {
+      font-size: 38px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #ffffff;
+      margin: 4px 0;
+      text-shadow: 0 3px 6px rgba(0,0,0,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    .phone-icon {
+      width: 32px;
+      height: 32px;
+      fill: #d4af37;
+    }
+    .helpline-email {
+      font-size: 17px;
+      font-weight: 700;
+      color: #d4af37;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Physical 8x3 Canvas -->
+  <div class="banner-canvas" id="banner">
+    <!-- Grommet Punch Markers -->
+    <div class="grommet g-top-left" title="Eyelet Grommet Hole"></div>
+    <div class="grommet g-top-mid" title="Eyelet Grommet Hole"></div>
+    <div class="grommet g-top-right" title="Eyelet Grommet Hole"></div>
+    <div class="grommet g-bottom-left" title="Eyelet Grommet Hole"></div>
+    <div class="grommet g-bot-mid" title="Eyelet Grommet Hole"></div>
+    <div class="grommet g-bottom-right" title="Eyelet Grommet Hole"></div>
+
+    <!-- Gold Borders -->
+    <div class="outer-border"></div>
+    <div class="inner-border"></div>
+
+    <!-- 1. TOP STRIP -->
+    <div class="top-strip">
+      HIGH COURT OF MADHYA PRADESH (INDORE BENCH) • DISTRICT &amp; SESSIONS JUDICIARY (UJJAIN • JHABUA • THANDLA)
+    </div>
+
+    <!-- 2. HERO IDENTITY & MEDALLIONS -->
+    <div class="hero-section">
+      <!-- Left Medallion: Scales of Justice -->
+      <div class="emblem-badge">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2L4 6v1a5 5 0 0 0 4 4.9V19H7a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2h-1v-7.1A5 5 0 0 0 20 7V6l-8-4zm-4 8a3 3 0 0 1-2.82-2h5.64A3 3 0 0 1 8 10zm8 0a3 3 0 0 1-2.82-2h5.64A3 3 0 0 1 16 10z"/>
+        </svg>
+        <div class="badge-sub">ESTD. 1999</div>
+        <div class="badge-year">25+ YRS PRACTICE</div>
+      </div>
+
+      <!-- Center Typography -->
+      <div class="identity-block">
+        <div class="hindi-salutation">॥ विधिक परामर्शदाता एवं वरिष्ठ अभिभाषक ॥</div>
+        <div class="primary-name">ADVOCATE TUSHAR Y. BHATT</div>
+        <div class="hindi-name">अभिभाषक तुषार वाय. भट्ट <span>(तुषार राव भट्ट)</span></div>
+        <div class="credentials-strip">
+          <span>B.Sc., LL.B.</span>
+          <span class="dot">•</span>
+          <span>Senior Legal Counsel</span>
+          <span class="dot">•</span>
+          <span>25+ Years at the Bar</span>
+        </div>
+      </div>
+
+      <!-- Right Seal: State Bar Council MP -->
+      <div class="bar-seal">
+        <div class="bar-seal-text-top">STATE BAR COUNCIL</div>
+        <div class="bar-seal-title">MADHYA PRADESH</div>
+        <div class="bar-divider"></div>
+        <div class="bar-seal-status">ENROLLED ADVOCATE</div>
+        <div class="bar-seal-stat">350+ eCourts Matters</div>
+      </div>
+    </div>
+
+    <!-- 3. PRACTICE AREAS GRID -->
+    <div class="practice-section">
+      <div class="practice-grid">
+        <div class="practice-item">
+          <div class="en">Civil Suits &amp; Writs</div>
+          <div class="hi">दीवानी दावे व रिट याचिकाएं</div>
+        </div>
+        <div class="practice-item">
+          <div class="en">Land Revenue (MPLRC)</div>
+          <div class="hi">राजस्व, नामांतरण व बंटवारा</div>
+        </div>
+        <div class="practice-item">
+          <div class="en">Property &amp; Title Disputes</div>
+          <div class="hi">पैतृक हक व संपत्ति विवाद</div>
+        </div>
+        <div class="practice-item">
+          <div class="en">Criminal Defense &amp; Bail</div>
+          <div class="hi">जमानत, सेशन ट्रायल व अपील</div>
+        </div>
+        <div class="practice-item">
+          <div class="en">Family &amp; Matrimonial</div>
+          <div class="hi">पारिवारिक व भरण-पोषण विवाद</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. BOTTOM CHAMBERS & HELPLINE FOOTER -->
+    <div class="footer-bar">
+      <!-- Head Chamber Ujjain -->
+      <div class="chamber-col">
+        <div class="col-title">🏛️ HEAD CHAMBER (UJJAIN)</div>
+        <div class="col-address">17-B Arihant Vikram Nagar, Sethi Nagar, Ujjain — 456010</div>
+        <div class="col-hindi">सेठी नगर, उज्जैन • उच्च न्यायालय व जिला न्यायालय</div>
+        <div class="col-timings">⏰ Mon – Sat: 10:00 AM – 8:00 PM (By Appointment)</div>
+      </div>
+
+      <!-- Regional Chamber Thandla / Jhabua -->
+      <div class="chamber-col">
+        <div class="col-title">⚖️ REGIONAL CHAMBER (THANDLA)</div>
+        <div class="col-address">Civil Court Campus, Near Tehsil Office, Thandla (Dist. Jhabua) — 457777</div>
+        <div class="col-hindi">सिविल कोर्ट परिसर, थांदला (जिला झाबुआ)</div>
+        <div class="col-timings">⏰ Mon – Sat: 10:00 AM – 6:00 PM (Court Hours)</div>
+      </div>
+
+      <!-- Direct Contact Helpline -->
+      <div class="helpline-box">
+        <div class="helpline-label">Chamber Direct Helpline</div>
+        <div class="helpline-number">
+          <svg class="phone-icon" viewBox="0 0 24 24">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58.11.35.03.74-.24 1.01l-2.21 2.2z"/>
+          </svg>
+          +91 94254 86154
+        </div>
+        <div class="helpline-email">adv.tusharbhatt@gmail.com</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
